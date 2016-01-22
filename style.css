@@ -160,7 +160,8 @@ a {
 /*-------------------------------------------*/
 
 .row {
-    max-width: 320px;
+    /*max-width: 320px;*/
+    width: 90%;
     margin: 0 auto;
     padding: 0;
 }
@@ -184,12 +185,16 @@ select::-ms-expand {
     font-size: 0;
     line-height: 0;
     border-bottom: 3px solid #ffed00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .head-right-col {
     display: inline-block;
     vertical-align: middle;
-    width: 24%;
+    width: 26%;
     text-align: left;
 }
 
@@ -203,7 +208,7 @@ select::-ms-expand {
 .logo-head {
     display: inline-block;
     vertical-align: middle;
-    width: 52%;
+    width: 48%;
     text-align: center;
 }
 
@@ -215,24 +220,26 @@ select::-ms-expand {
 .head-left-col {
     display: inline-block;
     vertical-align: middle;
-    width: 24%;
+    width: 26%;
     text-align: right;
 }
 
 .search-btn {
+    cursor: pointer;
     color: #ffffff;
     font-size: 30px;
     line-height: 30px;
     font-weight: lighter;
-    padding: 0 6%;
+    margin: 0 3%;
 }
 
 .basket-btn {
+    cursor: pointer;
     color: #ffffff;
     font-size: 30px;
     line-height: 30px;
     font-weight: lighter;
-    padding: 0 0 0 6%;
+    margin: 0 0 0 3%;
 }
 
 
@@ -241,7 +248,7 @@ select::-ms-expand {
 /*-------------------------------------------*/
 
 .screenone {
-    padding: 20px 0 0 0;
+    padding: 10% 0 0 0;
 }
 
 .tel-btn {
@@ -249,19 +256,57 @@ select::-ms-expand {
     background: rgba(255, 237, 0, 1);
     text-align: center;
     width: 100%;
-    padding: 2px 3px;
+    padding: 2%;
+    font-size: 0;
+    line-height: 0;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
+
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.tel-btn:link,
+.tel-btn:visited {
+    background: rgba(255, 237, 0, 1);
+}
+
+.tel-btn:hover,
+.tel-btn:active {
+    background-color: rgba(255, 232, 123, 1); 
+}
+
+
+.mobtel-ico-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8%;
+    padding: 0 3% 0 0;
 }
 
 .mobtel-ico {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     width: 17px;
-    height: 35px;
-    margin: 0 3% 0 0;
+    height: 35px;    
     background-image: url(img/mob_icon.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -271,10 +316,12 @@ select::-ms-expand {
 .tel-num {
     display: inline-block;
     vertical-align: middle;
+    width: 88%;
     color: #424242;
-    font-family: "Arial Black", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     line-height: 34px;
+    font-weight: 700;
 }
 
 
@@ -320,6 +367,36 @@ select::-ms-expand {
     -moz-border-radius: 0 2px 2px 0;
     -o-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
+
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.srchbtn:link,
+.srchbtn:visited {
+    background: rgba(255, 237, 0, 1);
+}
+
+.srchbtn:hover,
+.srchbtn:active {
+    background-color: rgba(255, 232, 123, 1); 
 }
 
 
@@ -333,7 +410,7 @@ select::-ms-expand {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 3px 0;
+    padding: 1% 2%;
 }
 
 .cat-itembg {
@@ -440,6 +517,36 @@ select::-ms-expand {
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
+
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.newsletter-btn:link,
+.newsletter-btn:visited {
+    background: rgba(255, 237, 0, 1);
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:active {
+    background-color: rgba(255, 232, 123, 1); 
 }
 
 
@@ -489,7 +596,7 @@ select::-ms-expand {
     display: block;
     width: 90%;
     margin: 8px auto;
-    padding: 5px;
+    padding: 2% 1%;
     border: none;
     background: rgba(66, 66, 66, 1);
     border: 1px solid #8e8e8e;
@@ -498,6 +605,38 @@ select::-ms-expand {
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
+    
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.tomainsite:link,
+.tomainsite:visited {
+    color: #ffffff;
+    background: rgba(66, 66, 66, 1);
+}
+
+.tomainsite:hover,
+.tomainsite:active {
+    color: #3833ff;
+    background-color: rgba(255, 232, 255, 1); 
 }
 
 

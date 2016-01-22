@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
+
     var w = window,
     d = document,
     e = d.documentElement,
@@ -11,6 +13,13 @@ $(document).ready(function() {
     $(document).scroll(function() {
 
         getScrollToTopBtn();
+
+    });
+
+
+    $(window).resize(function() {
+
+        $("body").css({"padding-top": $(".header-bg").height() + "px"});
 
     });
 
