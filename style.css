@@ -385,6 +385,9 @@ select::-ms-expand {
 
 .good {
     padding: 2% 0;
+}
+
+.good a {
     color: #424242;
     font-size: 18px;
     line-height: 22px;
