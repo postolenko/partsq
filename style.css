@@ -468,8 +468,37 @@ select::-ms-expand {
     color: #424242;
     font-size: 18px;
     line-height: 22px;
+    
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
+.good a:link,
+.good a:visited {
+    color: #424242;
+}
+
+.good a:hover,
+.good a:active {
+    color: #3833ff; 
+}
 
 /*-- News Letter Section --*/
 
@@ -606,23 +635,23 @@ select::-ms-expand {
     font-size: 24px;
     line-height: 30px;
     
-    -webkit-transition-property: background-color;
+    -webkit-transition-property: background-color color;
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background-color;
+    -moz-transition-property: background-color color;
     -moz-transition-duration: 0.3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background-color;
+    -ms-transition-property: background-color color;
     -ms-transition-duration: 0.3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background-color;
+    -o-transition-property: background-color color;
     -o-transition-duration: 0.3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background-color;
+    transition-property: background-color color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
