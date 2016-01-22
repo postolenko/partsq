@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var categoryListHeight;
 	var indexCategory;
 
-	$(".arrowcat").click(function() {
+	$(".catname").click(function() {
 
 		indexCategory = $(".arrowcat").index(this);
 
