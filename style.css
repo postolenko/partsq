@@ -38,27 +38,29 @@
 
 
 .glyphicon-menu-hamburger:before {
-  content: "\e236";
+    content: "\e236";
 }
 
 .glyphicon-search:before {
-  content: "\e003";
+    content: "\e003";
 }
 
 .glyphicon-shopping-cart:before {
-  content: "\e116";
+    content: "\e116";
 }
 
 .glyphicon-menu-down:before {
-  content: "\e259";
+    color: #0e0e0e;
+    content: "\e259";
 }
 
 .glyphicon-menu-up:before {
-  content: "\e260";
+    color: #0e0e0e;
+    content: "\e260";
 }
 
 .glyphicon-upload:before {
-  content: "\e027";
+    content: "\e027";
 }
 
 
