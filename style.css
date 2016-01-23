@@ -180,6 +180,7 @@ select::-ms-expand {
 /*-------------------------------------------*/
 
 .header-bg {
+    z-index: 999;
     background: rgba(182, 23, 46, 1);
     padding: 1% 0;
     font-size: 0;
@@ -196,6 +197,10 @@ select::-ms-expand {
     vertical-align: middle;
     width: 26%;
     text-align: left;
+}
+
+.respmenubtn {
+    cursor: pointer;
 }
 
 .glyphicon-menu-hamburger {
@@ -398,6 +403,27 @@ select::-ms-expand {
 .srchbtn:active {
     background-color: rgba(255, 232, 123, 1); 
 }
+
+
+/*-- Slider --*/
+
+.carousel {
+    width: 88%;
+    margin: 2% auto;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    min-height: 265px;
+}
+
+.carousel-inner .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 /*-- Categories --*/
