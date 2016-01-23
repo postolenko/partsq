@@ -416,7 +416,7 @@ select::-ms-expand {
 
 .carousel-inner {
     overflow: hidden;
-    min-height: 265px;
+    height: 200px;
 }
 
 .carousel-inner .item img {
