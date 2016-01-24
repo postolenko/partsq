@@ -26,9 +26,15 @@ $(document).ready(function() {
 
 		if( $(".menu-nav-box").length > 0 ) {
 
-			$(".menu-nav-box").remove();
+			// $(".menu-nav-box").animate({"left": -100 + "%"}, 300);
 
 			$(".respmenubtn").removeClass("glyphicon-remove");
+
+			// setInterval(function() {
+
+				$(".menu-nav-box").remove();
+
+			// }, 700);
 
 		} else {
 
@@ -42,13 +48,15 @@ $(document).ready(function() {
 
 			// $(".menu").css({"height": $(window).outerHeight() - $(".header-bg").outerHeight() + "px" });
 
-			$(".menu").height($(window).outerHeight() - $(".header-bg").outerHeight());
-
 			$(".menu-nav-box").load("menu.html", function() {
 
 
 
 			});
+
+			$(".menu-nav-box").height($(window).outerHeight() - $(".header-bg").outerHeight());
+
+			$(".menu-nav-box").animate({"left": 0  + "%"}, 200);
 
 		}
 
