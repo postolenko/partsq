@@ -5,13 +5,15 @@ $(document).ready(function() {
 	var categoryListHeight;
 	var indexCategory;
 
+	
+
+	
+
 	$(".catname").click(function() {
 
 		indexCategory = $(".catname").index(this);
 
 		categoryListHeight = $(".catlist:eq("+ indexCategory +")").height();
-
-		// $(".arrowcat:eq("+ indexCategory +")").toggleClass("glyphicon-menu-down");
 
 		if ( $(".catheight:eq("+ indexCategory +")").height() > 0 ) {
 

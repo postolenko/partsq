@@ -63,8 +63,13 @@
     content: "\e027";
 }
 
+.glyphicon-user:before {
+  content: "\e008";
+}
 
-
+.glyphicon-remove:before {
+  content: "\e014";
+}
 
 
 /*-------------------------------------------*/
@@ -459,26 +464,34 @@ select::-ms-expand {
 .catname h3 {
     display: inline-block;
     vertical-align: middle;
-    width: 90%;
+    /*width: 90%;*/
     color: #424242;
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 22px;
-    padding: 2.5% 0 2.5% 9%;
+    /*padding: 2.5% 0 2.5% 9%;*/
+    padding: 2.5% 0 2.5% 0;
 }
 
 
 .arrowcat {
-    display: inline-block;
+    /*display: inline-block;
     vertical-align: middle;
-    width: 10%;
+    width: 10%;*/
+    float: right;
     cursor: pointer;
     color: #424242;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
 }
 
 .catheight {
+    overflow: hidden;
+    height: auto;
+}
+
+.catlistheight {
+    display: block;
     overflow: hidden;
     height: auto;
 }
@@ -695,6 +708,114 @@ select::-ms-expand {
     color: #3833ff;
     background-color: rgba(255, 232, 255, 1); 
 }
+
+
+
+/*-- MENU --*/
+
+.menu-nav-box {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.menu {
+    background-color: rgba(182, 23, 46, 1);
+    overflow-y: scroll;
+    height: 100vh;
+    width: 90%;
+    padding: 20px 0 0 0;
+}
+
+.signin-block {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.user-icon {
+    padding: 0 10px 0 0;
+}
+
+.sinlink {
+    width: auto;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    
+    -webkit-transition-property: background-color color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.sinlink:link,
+.sinlink:visited {
+    color: #ffffff;
+}
+
+.sinlink:hover,
+.sinlink:active {
+    color: #ffed00; 
+}
+
+.sinlink .glyphicon-user {
+    /*padding: 0 10% 0 0;*/
+}
+
+
+
+.categorybox ul {
+    padding: 0 0 0 5%;
+}
+
+.catlist li {
+    /*border-bottom: 1px solid #bbbbbb;*/
+}
+
+
+/*-- Menu Footer --*/
+
+
+.menu-footer {
+    background: rgba(66, 66, 66, 1);
+    padding: 20px 0;
+}
+
+.menu-footer .tel-btn {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menufooterh {
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+/*-- / MENU --*/
 
 
 /*-------------------------------------------*/
