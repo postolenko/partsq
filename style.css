@@ -1056,7 +1056,33 @@ select::-ms-expand {
     border: none;
 }
 
+.goodsform {
+    font-size: 0;
+    line-height: 0;
+}
 
+.goodsform .newsletter-inpt,
+.goodsform .querysrch {
+    color: #424242;
+    font-size: 18px; 
+    line-height: 25px;
+    padding: 3% 1%;
+}
+
+.goodsform .newsletter-inpt {
+    margin: 10px 0;
+}
+
+.goodsh3 {
+    text-align: center;       
+}
+
+.goodsh3 h3 {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+} 
 
 
 
