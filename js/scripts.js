@@ -62,6 +62,25 @@ $(document).ready(function() {
     });
 
 
+    $(".list-btn").click(function() {
+
+        $(".good-cart-img").css({"width": 100 + "%"});
+        $(".goodcart-dec").css({"width": 100 + "%"});
+        $(".goodcart-dec h3").css({"font-size": 14 + "px"});
+
+    });
+
+
+
+    $(".cart-btn").click(function() {
+
+        $(".good-cart-img").css({"width": 50 + "%"});
+        $(".goodcart-dec").css({"width": 50 + "%"});        
+        $(".goodcart-dec h3").css({"font-size": 11 + "px"});
+
+    });
+
+
 
 
 

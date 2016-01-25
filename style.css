@@ -873,6 +873,26 @@ select::-ms-expand {
     font-size: 25px;
     line-height: 30px;
     margin: 0 7%;
+    
+    -webkit-transition-property: background-color color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 .cart-btn {
@@ -881,8 +901,42 @@ select::-ms-expand {
     font-size: 25px;
     line-height: 30px;
     margin: 0 0 0 7%;
+    
+    -webkit-transition-property: background-color color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
+
+.cart-btn:link,
+.cart-btn:visited,
+.list-btn:link,
+.list-btn:visited {
+    color: #ffffff;
+}
+
+.cart-btn:hover,
+.cart-btn:active,
+.list-btn:hover,
+.list-btn:active {
+    color: #ffed00; 
+}
 
 /*-- Goods Cart --*/
 
@@ -990,6 +1044,7 @@ select::-ms-expand {
     line-height: 18px;
     padding: 4% 6%;
     font-weight: 700;
+    text-align: center;
     -webkit-border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
     -o-border-radius: 10px 0 10px 0;
@@ -1017,7 +1072,6 @@ select::-ms-expand {
 .icon-count {
     display: inline-block;
     vertical-align: middle;
-    /*margin: 0 13px 0 13px;*/
 }
 
 .icon-plus,
@@ -1046,6 +1100,7 @@ select::-ms-expand {
 .addgood-btn {
     width: 100%;
     margin: 10px 0;
+    padding: 2% 1%;
     color: #ffffff;
     background-color: rgba(182, 23, 46, 1);
     font-size: 14px; 
@@ -1054,6 +1109,36 @@ select::-ms-expand {
     text-transform: uppercase;
     text-align: center;
     border: none;
+    
+    -webkit-transition-property: background-color color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.addgood-btn:link,
+.addgood-btn:visited {
+    background-color: rgba(182, 23, 46, 1);
+}
+
+.addgood-btn:hover,
+.addgood-btn:active {
+    background-color: rgba(221, 32, 59, 1);
 }
 
 .goodsform {
