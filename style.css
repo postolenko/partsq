@@ -627,7 +627,7 @@ select::-ms-expand {
     font-size: 0;
     line-height: 0;
     text-align: center;
-    padding: 10px 0;
+    padding: 13px 0;
 }
 
 .sociallinks-list li {
@@ -668,7 +668,7 @@ select::-ms-expand {
 .tomainsite {
     display: block;
     width: 90%;
-    margin: 8px auto;
+    margin: 12px auto;
     padding: 2% 1%;
     border: none;
     background: rgba(66, 66, 66, 1);
