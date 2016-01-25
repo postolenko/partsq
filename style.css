@@ -64,13 +64,16 @@
 }
 
 .glyphicon-user:before {
-  content: "\e008";
+    content: "\e008";
 }
 
 .glyphicon-remove:before {
-  content: "\e014";
+    content: "\e014";
 }
 
+.glyphicon-ok:before {
+    content: "\e013";
+}
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -820,6 +823,241 @@ select::-ms-expand {
 
 
 /*-- / MENU --*/
+
+
+/*-- Заголовок категории --*/
+
+.category-header {
+    font-size: 0;
+    line-height: 0;
+    padding: 4% 0;
+}
+
+.category-header .right-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+}
+
+.chevron-btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.category-header .categoryhead-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    text-align: center;
+}
+
+.categoryhead {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.category-header .left-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+    text-align: right;
+}
+
+.list-btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 7%;
+}
+
+.cart-btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 0 0 7%;
+}
+
+
+/*-- Goods Cart --*/
+
+.goods-sect {
+    background: rgba(255, 255, 255, 1);
+}
+
+.goodcart-box {
+    border-bottom: 1px solid #bbbbbb;
+    font-size: 0;
+    line-height: 0;
+    padding: 5% 0;
+}
+
+.good-cart-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 4% 0 0;
+}
+
+.good-cart-img img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.goodcart-dec {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.goodcart-dec h3 {
+    color: #111a25;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 0 0 6px 0;
+}
+
+.ansvers {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.ansvers p {
+    color: #4eb225;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.ansversok {
+    color: #4eb225;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0 1% 0 0;
+}
+
+.rating-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    text-align: right;
+}
+
+.rating-stars-list {
+
+}
+
+.rating-stars-list li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 1%;
+}
+
+.rating-star {
+    color: #111a25;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+
+.procode-box {
+    padding: 5px 0;
+}
+
+.procode-box h2 {
+    color: #6c6c6e;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.price {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    background: rgba(255, 250, 47, 1);
+    color: #282a36;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 4% 6%;
+    font-weight: 700;
+    -webkit-border-radius: 10px 0 10px 0;
+    -moz-border-radius: 10px 0 10px 0;
+    -o-border-radius: 10px 0 10px 0;
+    border-radius: 10px 0 10px 0;
+}
+
+
+.count-inpt-box {
+    display: inline-block; 
+    vertical-align: top; 
+    width: 50%;
+    font-size: 14px; 
+    line-height: 26px;
+    text-align: right;
+}
+
+.count-inpt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+}
+
+.icon-count {
+    display: inline-block;
+    vertical-align: middle;
+    /*margin: 0 13px 0 13px;*/
+}
+
+.icon-plus,
+.icon-minus {
+    cursor: pointer;
+    color: #a9a9a9;
+}
+
+.icon-plus:link,
+.icon-plus:visited,
+.icon-minus:link,
+.icon-minus:visited {
+    color: #a9a9a9;
+}
+
+.icon-plus:hover,
+.icon-minus:hover {
+    color: #000000;
+}
+
+.icon-plus:active,
+.icon-minus:active {
+    color: #81b3d2;
+}
+
+.addgood-btn {
+    width: 100%;
+    margin: 10px 0;
+    color: #ffffff;
+    background-color: rgba(182, 23, 46, 1);
+    font-size: 14px; 
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+
+
+
 
 
 /*-------------------------------------------*/

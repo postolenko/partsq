@@ -24,6 +24,44 @@ $(document).ready(function() {
     });
 
 
+    $(".icon-plus").click(function(){
+
+        index = $( ".icon-plus" ).index( this );
+        // function getCountCustomers(1);
+        countCustomers = parseFloat($(".count-inpt:eq("+index+")").val());
+
+        if( countCustomers <= 0 || !$.isNumeric(countCustomers) ) {
+    
+            countCustomers = 1;
+        
+        } else {
+
+            ++countCustomers;
+
+        }
+        $(".count-inpt:eq("+index+")").val(countCustomers);
+    });
+
+    $(".icon-minus").click(function(){
+
+        index = $( ".icon-minus" ).index( this );
+        // function getCountCustomers(-1);
+        countCustomers = parseFloat($(".count-inpt:eq("+index+")").val());
+
+        if( countCustomers <= 0 || !$.isNumeric(countCustomers) ) {
+            
+            countCustomers = 0;
+            
+        } else {
+
+            --countCustomers;
+
+        }
+        $(".count-inpt:eq("+index+")").val(countCustomers);
+
+    });
+
+
 
 
 
