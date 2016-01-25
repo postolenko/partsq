@@ -375,9 +375,9 @@ select::-ms-expand {
     font-family: Arial, sans-serif;
     color: #424242;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 25px;
     text-transform: lowercase;
-    padding: 2% 1%;
+    padding: 3% 1%;
     -webkit-border-radius: 0 2px 2px 0;
     -moz-border-radius: 0 2px 2px 0;
     -o-border-radius: 0 2px 2px 0;
