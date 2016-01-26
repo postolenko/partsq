@@ -1284,12 +1284,18 @@ select::-ms-expand {
     padding: 0 0 6px 0;
 }
 
+.good-pg .carousel {
+    width: 100%;
+}
 
 .good-pg .carousel-inner {
     overflow: hidden;
-    height: 180px;
+    height: 205px;
 }
 
+.good-pg .carousel-inner { {
+    margin: 10px 0 0 0;
+}
 
 .good-pg .rating {
     font-size: 0;
