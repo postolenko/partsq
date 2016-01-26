@@ -212,4 +212,11 @@ $(document).ready(function() {
     $(".ui-loader").remove();
 
 
+     $(document).bind("mobileinit",function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+
+
 });
