@@ -153,6 +153,11 @@ $(document).ready(function() {
 
 
 
+    $(document).on("pageshow", "[data-role='page'].no-loadmsg", function () {
+        $('div.ui-loader').remove();
+    });
+
+
 
 
     // Navigation scroll
