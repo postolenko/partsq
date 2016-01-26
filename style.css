@@ -1718,6 +1718,7 @@ select::-ms-expand {
 
 .shopping-steps li {
     width: 90%;
+    padding: 3px 0;
     color: #5f5c5c;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -1730,12 +1731,12 @@ select::-ms-expand {
 .shopping-steps li:before {
     display: block;
     content: "";
-    width: 112%;
+    width: 115%;
     height: 1px;
     border-top: 1px solid #bbbbbb;
     position: absolute;
     top: 0;
-    left: -12%;
+    left: -15%;
 }
 
 /*-------------------------------------------*/
