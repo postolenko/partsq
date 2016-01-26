@@ -153,9 +153,9 @@ $(document).ready(function() {
 
 
 
-    $(document).on("pageshow", "[data-role='page'].no-loadmsg", function () {
+    // $(document).on("pageshow", "[data-role='page'].no-loadmsg", function () {
         $(".ui-loader").remove();
-    });
+    // });
 
 
 
