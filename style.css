@@ -1625,6 +1625,119 @@ select::-ms-expand {
 }
 
 
+
+
+
+
+.cash-good-box {
+    background: rgba(255, 255, 255, 1);
+}
+
+.cash-good {
+    border-bottom: 1px solid #bbbbbb;    
+    font-size: 0;
+    line-height: 0;
+    padding: 15px 0;
+}
+
+.cash-good-img-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 37%;
+}
+
+.cash-good-img-box img {
+    width: 97%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cash-good-middle-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 43%;
+}
+
+.cashgoodh {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0 0 20px 0;
+}
+
+.pricecount-box {
+
+}
+
+.cash-good-box .price {
+    font-size: 12px;
+}
+
+.cash-good-box .count-inpt-box {
+    font-size: 13px;
+}
+
+.cash-good-right-col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.cash-good-right-col button {
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/remove_btn_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.totalprice-box {
+    text-align: right;
+}
+
+.tl-price {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.shopping-steps {
+    background: rgba(255, 255, 255, 1);
+    /*padding: 0 0 0 15%;*/
+}
+
+.shopping-steps li {
+    width: 90%;
+    color: #5f5c5c;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    list-style: decimal;
+    position: relative;
+    left: 10%;
+}
+
+.shopping-steps li:before {
+    display: block;
+    content: "";
+    width: 112%;
+    height: 1px;
+    border-top: 1px solid #bbbbbb;
+    position: absolute;
+    top: 0;
+    left: -12%;
+}
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
