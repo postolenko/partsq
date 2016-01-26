@@ -154,7 +154,7 @@ $(document).ready(function() {
 
 
     $(document).on("pageshow", "[data-role='page'].no-loadmsg", function () {
-        $("div .ui-loader").remove();
+        $(".ui-loader").remove();
     });
 
 
