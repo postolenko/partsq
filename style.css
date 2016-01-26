@@ -75,6 +75,10 @@
     content: "\e013";
 }
 
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -227,10 +231,10 @@ select::-ms-expand {
     text-align: center;
 }
 
-.logo-head img {
+/*.logo-head img {
     width: 130px;
     height: 40px;
-}
+}*/
 
 .head-left-col {
     display: inline-block;
@@ -1035,7 +1039,7 @@ select::-ms-expand {
 
 .price {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 50%;
     background: rgba(255, 250, 47, 1);
     color: #282a36;
@@ -1054,7 +1058,7 @@ select::-ms-expand {
 
 .count-inpt-box {
     display: inline-block; 
-    vertical-align: top; 
+    vertical-align: middle; 
     width: 50%;
     font-size: 14px; 
     line-height: 26px;
@@ -1099,7 +1103,7 @@ select::-ms-expand {
 
 .addgood-btn {
     width: 100%;
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
     padding: 2% 1%;
     color: #ffffff;
     background-color: rgba(182, 23, 46, 1);
@@ -1110,23 +1114,23 @@ select::-ms-expand {
     text-align: center;
     border: none;
     
-    -webkit-transition-property: background-color color;
+    -webkit-transition-property: background-color;
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background-color color;
+    -moz-transition-property: background-color;
     -moz-transition-duration: 0.3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background-color color;
+    -ms-transition-property: background-color;
     -ms-transition-duration: 0.3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background-color color;
+    -o-transition-property: background-color;
     -o-transition-duration: 0.3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background-color color;
+    transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
@@ -1236,7 +1240,6 @@ select::-ms-expand {
     color: #ffffff;
 }
 
-
 .dots-item {
     color: #000000;
     font-size: 16px;
@@ -1264,6 +1267,359 @@ select::-ms-expand {
     -o-border-radius: 50%;
     border-radius: 50%;
 }
+
+
+/* ----- Страница товара ------ */
+
+.good-pg {
+    background: rgba(255, 255, 255, 1);
+    padding: 15px 0;
+}
+
+.tovarpghead {
+    color: #111a25;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 0 0 6px 0;
+}
+
+.good-pg .rating {
+    font-size: 0;
+    line-height: 0;
+}
+
+.good-pg .rating .rating-stars-list {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.good-pg .rating .ansvers {
+    text-align: right;
+}
+
+.good-pg .pricecount-box {
+    font-size: 0;
+    line-height: 0;
+    padding: 20px 0;
+}
+
+.soclinktovarpg-list {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.soclinktovarpg-list li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 3%;
+}
+
+.soclink-tovpg {
+    display: block;
+    width: 20px;
+    height: 23px;
+    cursor: pointer;
+    background-image: url(img/soclink_sprt_tovar.png);
+}
+
+.soclinktovarpg-list .facebook {
+    background-position: 0px 0;
+}
+
+.soclinktovarpg-list .twitter {
+    background-position: -34px 0;
+}
+
+.soclinktovarpg-list .google {
+    background-position: -69px 0;
+}
+
+.soclinktovarpg-list .p {
+    background-position: -105px 0;
+}
+
+.soclinktovarpg-list .mail {
+    background-position: -145px 0;
+}
+
+.soclinktovarpg-list .chain {
+    background-position: -182px 0;
+}
+
+
+.desc-box {
+    font-size: 0;
+    line-height: 0;
+    padding: 5px 0;
+}
+
+.desc-box h3 {
+    float: left;
+    color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.desc-box button,
+.testimonials-box button {
+    border: none;
+    background: none;
+    float: right;
+}
+
+.desc-box button:link,
+.desc-box button:visited,
+.testimonials-box button:link,
+.testimonials-box button:visited  {
+    border: none;
+    background: none;
+}
+
+.desc-box button:hover,
+.desc-box button:active,
+.testimonials-box button:link,
+.testimonials-box button:visited  {
+    border: none;
+    background: none;
+}
+
+.arrow-down {
+    color: #1e1e1e;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+
+.testimonials-box {
+    font-size: 0;
+    line-height: 0;
+    padding: 5px 0;
+}
+
+.testimonials-box h3 {
+    float: left;
+    color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.descriptions-hover {
+    overflow: hidden;
+    height: 0;
+}
+
+.descriptions {
+    height: auto;
+}
+
+.descriptions p {
+    color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.testimonials-hover {
+    overflow: hidden;
+    height: 0;
+}
+
+.testimonials p {
+    color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+
+
+
+
+.action-sect {
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 0;
+}
+
+.actionh-box {
+    background: rgba(254, 220, 0, 1);
+}
+
+.actionh {
+    background: rgba(254, 220, 0, 1);
+    font-family: Arial, sans-serif;
+    color: #010101;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    padding: 1.5% 0;
+}
+
+.action-thumbs {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.action-thumb {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.thumb-img-box {
+    overflow: hidden;
+    height: 90px;
+}
+
+.thumb-img-box img {
+    max-width: auto;
+    height: auto;
+}
+
+.action-thumbs-plus {
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 35px 0 0 0;
+}
+
+.action-thumb h3 {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4% 0;
+}
+
+.action-content {
+    font-size: 0;
+    line-height: 0;
+    padding: 10px 0;
+}
+
+.action-col-left {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 60%;
+}
+
+.action-col-left p {
+    font-family: Arial, sans-serif;
+    color: #b80f0e;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.action-col-right {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 40%;
+}
+
+.action-col-right p {
+    font-family: Arial, sans-serif;
+    color: #79777f;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.action-btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    border: none;
+    background: rgba(182, 23, 46, 1);
+    padding: 2% 3%;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.action-btn:link,
+.action-btn:visited {
+    background: rgba(182, 23, 46, 1);
+}
+
+.action-btn:hover,
+.action-btn:active {
+    background-color: rgba(221, 32, 59, 1);
+}
+
+.relgoods-box {
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 0;
+}
+
+.relgoods {
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.relgoodsh {
+    display: inline-block;
+    vertical-align: middle;
+    width: 62%;
+    color: #b6172e;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 21px;
+    margin: 0 1%;
+    padding: 2%;
+    border: 1px solid #b6172e;
+}
+
+.relgoods:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18%;
+    border-top: 1px solid #bbbbbb;
+}
+
+.relgoods:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18%;
+    border-top: 1px solid #bbbbbb;
+}
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
