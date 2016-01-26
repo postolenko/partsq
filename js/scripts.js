@@ -152,14 +152,6 @@ $(document).ready(function() {
     });
 
 
-
-    // $(document).on("pageshow", "[data-role='page'].no-loadmsg", function () {
-        $(".ui-loader").remove();
-    // });
-
-
-
-
     // Navigation scroll
 
     $(function() {
@@ -213,6 +205,11 @@ $(document).ready(function() {
 
 
     
+
+
+// Remove loading indicator
+
+    $(".ui-loader").remove();
 
 
 });

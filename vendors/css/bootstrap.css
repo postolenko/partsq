@@ -6314,12 +6314,24 @@ button.close {
   border: 1px solid #fff;
   border-radius: 10px;
 }
+
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
   background-color: #fff;
 }
+
+.carousel-tovar-indicators li {
+  background-color: rgba(182, 23, 46, .4);
+}
+
+.carousel-tovar-indicators .active {
+   background-color: rgba(182, 23, 46, 1);
+}
+
+
+
 .carousel-caption {
   position: absolute;
   right: 15%;
