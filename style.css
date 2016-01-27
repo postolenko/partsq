@@ -987,7 +987,7 @@ select::-ms-expand {
 .goodcart-dec h3 {
     color: #111a25;
     font-size: 11px;
-    line-height: 16px;
+    line-height: 15px;
     font-weight: 700;
     padding: 0 0 6px 0;
 }
@@ -1695,6 +1695,10 @@ select::-ms-expand {
     position: relative;
 }
 
+.swiper-container-3 {
+    height: 130px;
+}
+
 .swiper-slide {
     width: 310px;
     text-align: center;
@@ -1771,10 +1775,6 @@ select::-ms-expand {
     padding: 0 0 20px 0;
 }
 
-.pricecount-box {
-
-}
-
 .cash-good-box .price {
     font-size: 12px;
 }
@@ -1814,6 +1814,77 @@ select::-ms-expand {
     padding: 10px 0;
 }
 
+.ups-box {
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 0;
+}
+
+.ups {
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.upsh {
+    display: inline-block;
+    vertical-align: middle;
+    width: 62%;
+    color: #b6172e;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 21px;
+    margin: 0 1% 2% 1%;
+    padding: 2%;
+    border: 1px solid #b6172e;
+    text-transform: uppercase;
+}
+
+.ups:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18%;
+    border-top: 1px solid #bbbbbb;
+}
+
+.ups:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18%;
+    border-top: 1px solid #bbbbbb;
+}
+
+.price-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+}
+
+.price-box .price {
+    width: 90%;
+}
+
+.proposition-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: right;
+}
+
+.proposition {
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    background: rgba(182, 23, 46, 1);
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    line-height: 14px;
+    padding: 7% 7% 5% 7%;
+}
+
 .shopping-steps {
     background: rgba(255, 255, 255, 1);
     /*padding: 0 0 0 15%;*/
@@ -1841,7 +1912,6 @@ select::-ms-expand {
     top: 0;
     left: -15%;
 }
-
 
 
 
