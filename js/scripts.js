@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
 
     var w = window,
@@ -16,12 +17,19 @@ $(document).ready(function() {
 
     });
 
+        $(".swiper-container").css({"width": $(window).width() + "px"});
+        $(".slider-sw").css({"width": $(window).width() + "px"});
 
     $(window).resize(function() {
 
         $("body").css({"padding-top": $(".header-bg").height() + "px"});
 
+        $(".swiper-container").css({"width": $(window).width() + "px"});
+        $(".slider-sw").css({"width": $(window).width() + "px"});
+
     });
+
+
 
 
     $(".icon-plus").click(function(){
@@ -211,13 +219,7 @@ $(document).ready(function() {
 
     $(".ui-loader").remove();
 
-    $(".swiper-container").width($(window).outerWidth(true));
 
-    $(window).resize(function() {
-
-        $(".swiper-container").width($(window).outerWidth(true));
-
-    });
 
 
 

@@ -430,7 +430,7 @@ select::-ms-expand {
 
 /*-- Slider --*/
 
-.carousel {
+/*.carousel {
     width: 88%;
     margin: 2% auto;
 }
@@ -444,7 +444,7 @@ select::-ms-expand {
     display: block;
     width: 100%;
     height: auto;
-}
+}*/
 
 
 
@@ -1684,6 +1684,52 @@ select::-ms-expand {
 .swiper-slide .item .price{
     font-size: 12px;
 }
+
+
+
+
+.slider-sw,
+.swiper-container {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
+    width: 310px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-container .swiper-slide{
+    padding: 10px 0 0 0;
+}
+
+.slider-sw .item {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-container .swiper-slide .item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-sw .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 .cash-good-box {
