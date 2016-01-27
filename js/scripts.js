@@ -212,7 +212,14 @@ $(document).ready(function() {
     $(".ui-loader").remove();
 
 
-     
+         // $(document).ready(function() {
+
+
+        $(".swiper-container").width($(window).width());
+        // $(".swiper-slide").width($(window).width());
+
+
+    // });
 
 
 });
