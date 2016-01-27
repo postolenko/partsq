@@ -211,15 +211,14 @@ $(document).ready(function() {
 
     $(".ui-loader").remove();
 
+    $(".swiper-container").width($(window).outerWidth(true));
 
-         // $(document).ready(function() {
+    $(window).resize(function() {
 
+        $(".swiper-container").width($(window).outerWidth(true));
 
-        $(".swiper-container").width($(window).width());
-        // $(".swiper-slide").width($(window).width());
+    });
 
-
-    // });
 
 
 });

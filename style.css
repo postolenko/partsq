@@ -1667,19 +1667,22 @@ select::-ms-expand {
     border-top: 1px solid #bbbbbb;
 }
 
-/*.myCarousel .left {
-    position: absolute;
-    margin-left: -7% !important;
+.swiper-slide .goodcart-box {
+    text-align: left;
+    border-bottom: 1px solid transparent;
+    padding: 0;
 }
 
-.myCarousel .right {
-    position: absolute;
-    margin-right: -7% !important;
-}*/
+.swiper-slide .item .good-cart-img {
+    width: 45%;
+}
 
-.slider-relgoods .carousel-inner {
-    width: 97%;
-    margin: 0 auto;
+.swiper-slide .item .goodcart-dec {
+    width: 55%;
+}
+
+.swiper-slide .item .price{
+    font-size: 12px;
 }
 
 
