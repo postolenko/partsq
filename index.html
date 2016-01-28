@@ -22,8 +22,6 @@
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/bootstrap.js"></script>
 
-	<script type="text/javascript" src="vendors/js/jquery.mobile.min.js"></script>
-
 <!-- 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16"> -->
 	
 	<title>PartsQ</title>
@@ -43,7 +41,12 @@
 
 				<div class="head-right-col">
 
-					<i class="respmenubtn glyphicon glyphicon-menu-hamburger"></i>
+					<!-- <i class="respmenubtn glyphicon glyphicon-menu-hamburger"></i> -->
+					<div class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 
 				</div>
 
@@ -55,9 +58,13 @@
 
 				<div class="head-left-col">
 
-					<i class="search-btn glyphicon glyphicon-search"></i>
+					<!-- <i class="search-btn glyphicon glyphicon-search"></i> -->
 
-					<i class="basket-btn glyphicon glyphicon-shopping-cart"></i>
+					<div class="search-btn"></div>
+
+					<!-- <i class="basket-btn glyphicon glyphicon-shopping-cart"></i> -->
+
+					<div class="basket-btn"></div>
 
 				</div>
 
@@ -192,14 +199,6 @@
 
 						$('.carousel').carousel({
 						  interval: 20000
-						});
-
-						$("#carousel-example-generic").swiperight(function() {  
-							$("#carousel-example-generic").carousel('prev');  
-						});
-
-						$("#carousel-example-generic").swipeleft(function() {  
-							$("#carousel-example-generic").carousel('next');  
 						});
 
 					</script>

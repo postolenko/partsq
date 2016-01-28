@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 			// $(".menu-nav-box").animate({"left": -100 + "%"}, 300);
 
-			$(".respmenubtn").removeClass("glyphicon-remove");
+			$(".respmenubtn").removeClass("respmenubtn-active");
 
 			// setInterval(function() {
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 		} else {
 
-			$(".respmenubtn").addClass("glyphicon-remove");
+			$(".respmenubtn").addClass("respmenubtn-active");
 
 			$(".header-bg").append("<div class='menu-nav-box'></div>");
 
