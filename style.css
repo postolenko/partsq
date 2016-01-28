@@ -1816,7 +1816,9 @@ select::-ms-expand {
     margin: 0 1%;
 }
 
-
+.swipper-slider-main-box .swiper-slide .item img {
+    width: 100%;
+}
 
 
 
