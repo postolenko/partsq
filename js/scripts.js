@@ -17,6 +17,8 @@ $(document).ready(function() {
 
     });
 
+
+        $(".swipper-slider-main").css({"width": $(window).width() + "px"});
         $(".swiper-container").css({"width": $(window).width() + "px"});
         $(".slider-sw").css({"width": $(window).width() + "px"});
 
@@ -24,6 +26,7 @@ $(document).ready(function() {
 
         $("body").css({"padding-top": $(".header-bg").height() + "px"});
 
+        $(".swipper-slider-main").css({"width": $(window).width() + "px"});
         $(".swiper-container").css({"width": $(window).width() + "px"});
         $(".slider-sw").css({"width": $(window).width() + "px"});
 

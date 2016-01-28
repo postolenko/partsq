@@ -527,7 +527,7 @@ select::-ms-expand {
 
 /*-- Slider --*/
 
-/*.carousel {
+.carousel {
     width: 88%;
     margin: 2% auto;
 }
@@ -541,7 +541,7 @@ select::-ms-expand {
     display: block;
     width: 100%;
     height: auto;
-}*/
+}
 
 
 
@@ -1784,13 +1784,42 @@ select::-ms-expand {
 
 
 
-
+.swipper-slider-main,
 .slider-sw,
 .swiper-container {
     height: 220px;
     overflow: hidden;
     position: relative;
 }
+
+.swipper-slider-main-box {
+    position: relative;
+    margin: 18px 0 10px 0;
+}
+
+.swipper-slider-main-box .swiper-slide {
+    margin: 0 auto;
+}
+
+.swipper-slider-main-box .swiper-pagination {
+    width: 100%;
+    text-align: center;
+    top: -25px;
+}
+
+.swipper-slider-main-box .swiper-pagination-bullet-active {
+    background: rgb(255, 255, 255);
+}
+
+.swipper-slider-main-box .swiper-pagination-bullet {
+    background: rgb(255, 255, 255);
+    margin: 0 1%;
+}
+
+
+
+
+
 
 .swiper-container-3 {
     height: 130px;
