@@ -56,6 +56,14 @@
     content: "\e260";
 }
 
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
 .glyphicon-upload:before {
     content: "\e027";
 }
@@ -75,6 +83,16 @@
 .glyphicon-triangle-bottom:before {
   content: "\e252";
 }
+
+.glyphicon-plus:before {
+  content: "\002b";
+}
+
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -1162,7 +1180,7 @@ select::-ms-expand {
     background: rgba(255, 250, 47, 1);
     color: #282a36;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18px;
     padding: 4% 6%;
     font-weight: 700;
@@ -1187,6 +1205,9 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: middle;
     width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
     text-align: center;
     border: 1px solid #dfdfdf;
 }
