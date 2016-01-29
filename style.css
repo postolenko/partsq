@@ -46,18 +46,6 @@
 }
 
 
-.glyphicon-menu-hamburger:before {
-    content: "\e236";
-}
-
-.glyphicon-search:before {
-    content: "\e003";
-}
-
-.glyphicon-shopping-cart:before {
-    content: "\e116";
-}
-
 .glyphicon-menu-down:before {
     color: #0e0e0e;
     content: "\e259";
@@ -76,9 +64,9 @@
     content: "\e008";
 }
 
-.glyphicon-remove:before {
+/*.glyphicon-remove:before {
     content: "\e014";
-}
+}*/
 
 .glyphicon-ok:before {
     content: "\e013";
@@ -289,8 +277,6 @@ select::-ms-expand {
     top: -2px;
 }
 
-
-
 .logo-head {
     display: inline-block;
     vertical-align: middle;
@@ -427,7 +413,7 @@ select::-ms-expand {
     background: rgba(255, 255, 255, 1);
     font-family: Arial, sans-serif;
     color: #424242;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     padding: 2% 1%;
     -webkit-border-radius: 2px 0 0 2px;
@@ -560,9 +546,8 @@ select::-ms-expand {
 }
 
 .catlistheight {
-    display: block;
+    /*display: block;*/
     overflow: hidden;
-    height: auto;
 }
 
 .catlist {
@@ -571,7 +556,8 @@ select::-ms-expand {
 }
 
 .good {
-    padding: 2% 0;
+    /*padding: 2% 0;*/
+    padding: 1% 0;
 }
 
 .good a {
@@ -853,6 +839,18 @@ select::-ms-expand {
 
 .categorybox ul {
     padding: 0 0 0 5%;
+}
+
+.categorybox {
+    margin: 0 0 0 -5%;
+}
+
+.blocklistactive {
+    /*min-height: auto;*/
+}
+
+.catlist {
+    /*overflow: hidden;*/
 }
 
 
