@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 			$(".respmenubtn").removeClass("respmenubtn-active");
 
-			$(".menu-nav-box").remove();
+			// $(".menu-nav-box").remove();
 
 
 		} else {
