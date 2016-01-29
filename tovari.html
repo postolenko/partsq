@@ -469,6 +469,38 @@
 
 	<script src="main_navigation/main_navigation.js"></script>
 
+		<script>
+		
+		setTimeout(function() {
+
+			var sl = new Swiper(".swipper-slider-main", {
+
+	    		pagination: ".swiper-pag-main",
+		        paginationClickable: true
+
+	    	});
+
+			var sl1 = new Swiper(".slider-sw", {
+
+	    		pagination: ".swiper-pag-1",
+		        paginationClickable: true
+
+	    	});
+
+		    var sl2 = new Swiper(".swiper-container", {
+
+	    		pagination: ".swiper-pag-2",
+		        paginationClickable: true,
+		        nextButton: ".swiper-button-next",
+		        prevButton: ".swiper-button-prev",
+		        spaceBetween: 0
+
+	    	});
+
+	    }, 3000);
+
+	</script>
+
 
 	</div>
 
