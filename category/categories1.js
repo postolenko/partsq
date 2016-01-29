@@ -28,11 +28,11 @@ $(document).ready(function() {
 
 		if( $(this).next(".catlistheight") ) {
 
-			$(this).offset().top;
+			// $(this).offset().top;
 
-			$(document).offset().top = $(this).offset().top;
+			// $(document).offset().top = $(this).offset().top;
 
-			console.log($(this).offset().top);
+			// console.log($(this).offset().top);
 
 			var elhBlock = $(this).next(".catlistheight");
 
