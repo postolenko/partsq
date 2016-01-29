@@ -318,7 +318,7 @@ select::-ms-expand {
 .scroll-to-top {
     display: inline-block;
     vertical-align: top;
-    opacity: .7;
+    opacity: .6;
     width: 32px;
     z-index: 99;
     position: fixed;
@@ -326,7 +326,7 @@ select::-ms-expand {
     right: 2%;
     cursor: pointer;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     text-align: center;
     background: rgba(182, 23, 46, 1);
