@@ -13,8 +13,6 @@ $(document).ready(function() {
 
 	for(var index = 0; index <= $(".catlistheight").length - 1; ++index) {
 
-		console.log(index);
-
 		$(".catlistheight:eq("+ index +")").attr("id","cat_"+ index);
 
 		var childList = $(".catlistheight:eq("+ index +")").children(".catlist");

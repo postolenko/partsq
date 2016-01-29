@@ -516,21 +516,63 @@ select::-ms-expand {
     border-top: 1px solid transparent;
 }
 
+/*.good a:hover {
+    display: block;
+    width: 100%;
+}*/
+
 .catname {
     font-size: 0;
     line-height: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .catname h3 {
     display: inline-block;
     vertical-align: middle;
+    width: 91%;
     color: #424242;
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 22px;
     padding: 2.5% 0 2.5% 0;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
+.catname h3:link,
+.catname h3:visited,
+.catname:link .glyphicon:before,
+.catname:visited .glyphicon:before {
+    color: #424242;
+}
+
+.catname h3:hover,
+.catname h3:active,
+.catname:hover .glyphicon:before,
+.catname:active .glyphicon:before {
+    color: #E82541;
+}
 
 .arrowcat {
     float: right;
@@ -546,7 +588,6 @@ select::-ms-expand {
 }
 
 .catlistheight {
-    /*display: block;*/
     overflow: hidden;
 }
 
@@ -556,11 +597,11 @@ select::-ms-expand {
 }
 
 .good {
-    /*padding: 2% 0;*/
     padding: 1% 0;
 }
 
 .good a {
+    display: block;
     color: #424242;
     font-size: 18px;
     line-height: 22px;
@@ -593,7 +634,8 @@ select::-ms-expand {
 
 .good a:hover,
 .good a:active {
-    color: #3833ff; 
+    color: #FB4545;
+    text-decoration: none;
 }
 
 /*-- News Letter Section --*/
