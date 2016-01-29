@@ -28,6 +28,12 @@ $(document).ready(function() {
 
 		if( $(this).next(".catlistheight") ) {
 
+			$(this).offset().top;
+
+			$(document).offset().top = $(this).offset().top;
+
+			console.log($(this).offset().top);
+
 			var elhBlock = $(this).next(".catlistheight");
 
 			var elhListBlock = elhBlock.children(".catlist");
@@ -80,94 +86,7 @@ $(document).ready(function() {
 
 			}
 
-				// if ( $(".blocklistactive").height() > 0 ) {
-
-				// 	$(".blocklistactive").animate({"min-height": 0}, 400);
-
-				// 	if ($(".catname:eq("+ indexCategory +") .arrowcat").hasClass("glyphicon-menu-up")) {
-
-				// 		$(".catname:eq("+ indexCategory +") .arrowcat").removeClass("glyphicon-menu-up");
-
-				// 		$(".catname:eq("+ indexCategory +") .arrowcat").addClass("glyphicon-menu-down");
-
-				// 	}
-
-				// } else {
-
-				// 	$(".blocklistactive").animate({"min-height": categoryListHeight + "px"}, 400);			
-
-				// 	if ($(".catname:eq("+ indexCategory +") .arrowcat").hasClass("glyphicon-menu-down")) {
-
-				// 		$(".catname:eq("+ indexCategory +") .arrowcat").removeClass("glyphicon-menu-down");
-
-				// 		$(".catname:eq("+ indexCategory +") .arrowcat").addClass("glyphicon-menu-up");
-
-				// 	}
-
-				// }
-
-
 		}
-
-		// $("#cat1").height($("#list1").height());
-
-		// for(var index = 0; index <= $(".catlistheight").length - 1; index++) {
-
-		// 	console.log($(".catlistheight").index());
-
-		// }
-
-
-
-		// $(".good").removeClass("categorylistactive");
-		// $(".catlistheight").removeClass("blocklistactive");
-		// $(".catlist").removeClass("listHeight");
-
-		// indexCategory = $(".catname").index(this);
-		// console.log(indexCategory);
-		// elparent = $(".catname:eq("+ indexCategory +")").parent(".good");
-
-		// elparent.addClass("categorylistactive");
-
-		// elementsecond = $(".catname:eq("+ indexCategory +")").next(".catlistheight");
-
-		// elementsecond.addClass("blocklistactive");
-
-		// boxhidden = $(".blocklistactive").find(".catlist:first");
-
-		// boxhidden.addClass("listHeight");
-
-		// console.log( boxhidden.height() );
-
-
-		// categoryListHeight = $(".listHeight").height();
-
-
-		// if ( $(".blocklistactive").height() > 0 ) {
-
-		// 	$(".blocklistactive").animate({"min-height": 0}, 400);
-
-		// 	if ($(".catname:eq("+ indexCategory +") .arrowcat").hasClass("glyphicon-menu-up")) {
-
-		// 		$(".catname:eq("+ indexCategory +") .arrowcat").removeClass("glyphicon-menu-up");
-
-		// 		$(".catname:eq("+ indexCategory +") .arrowcat").addClass("glyphicon-menu-down");
-
-		// 	}
-
-		// } else {
-
-		// 	$(".blocklistactive").animate({"min-height": categoryListHeight + "px"}, 400);			
-
-		// 	if ($(".catname:eq("+ indexCategory +") .arrowcat").hasClass("glyphicon-menu-down")) {
-
-		// 		$(".catname:eq("+ indexCategory +") .arrowcat").removeClass("glyphicon-menu-down");
-
-		// 		$(".catname:eq("+ indexCategory +") .arrowcat").addClass("glyphicon-menu-up");
-
-		// 	}
-		
-		// }
 
 
 	});
