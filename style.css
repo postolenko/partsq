@@ -60,6 +60,10 @@
   content: "\e080";
 }
 
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
 .glyphicon-menu-right:before {
   content: "\e258";
 }
