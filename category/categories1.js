@@ -11,7 +11,6 @@ $(document).ready(function() {
 	var boxhidden;
 
 
-
 	for(var index = 0; index <= $(".catlistheight").length - 1; ++index) {
 
 		console.log(index);
@@ -33,6 +32,8 @@ $(document).ready(function() {
 
 			var elhBlock = $(this).next(".catlistheight");
 
+			var elhListBlock = elhBlock.children(".catlist");
+
 			var itemList = $(this).children(".arrowcat");
 
 			var elAttr = elhBlock.attr("id");
@@ -43,7 +44,13 @@ $(document).ready(function() {
 
 			if( $("#" + elAttr).height() <= 0 ) {
 
-				$("#" + elAttr).css({"height": "auto"});
+				// elhListBlock.css({"height": "auto"});
+
+				// $("#" + elAttr).animate({"height": elhListBlock.height() + "px"}, 300);
+
+				$("#" + elAttr).css({"height":"auto"});
+
+				console.log(elhListBlock.height());
 
 				if ( itemList.hasClass("glyphicon-menu-down") ) {
 
@@ -55,7 +62,15 @@ $(document).ready(function() {
 
 			} else {
 
-				$("#" + elAttr).css({"height": 0});
+				// $("#" + elAttr).css({"height": 0});
+
+				// elhListBlock.css({"height": "0"});
+
+				// $("#" + elAttr).animate({"height": 0}, 300);
+
+				$("#" + elAttr).css({"height":"0"});
+
+				console.log(elhListBlock.height());
 
 				if ( itemList.hasClass("glyphicon-menu-up") ) {
 
