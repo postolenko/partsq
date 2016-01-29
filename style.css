@@ -84,6 +84,10 @@
     content: "\e013";
 }
 
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
 .glyphicon-triangle-bottom:before {
   content: "\e252";
 }
@@ -96,7 +100,9 @@
   content: "\2212";
 }
 
-
+.glyphicon-star:before {
+  content: "\e006";
+}
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -481,9 +487,9 @@ select::-ms-expand {
     font-family: Arial, sans-serif;
     color: #424242;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 25px;
     text-transform: lowercase;
-    padding: 2% 1%;
+    padding: 3% 1%;
     -webkit-border-radius: 0 2px 2px 0;
     -moz-border-radius: 0 2px 2px 0;
     -o-border-radius: 0 2px 2px 0;
@@ -1123,15 +1129,23 @@ select::-ms-expand {
     padding: 0 0 6px 0;
 }
 
+/*.procode-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 58%;
+    padding: 5px 0;
+}*/
+
 .ansvers {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 40%;
+    /*text-align: right;*/
 }
 
 .ansvers p {
     color: #4eb225;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 15px;
 }
 
@@ -1148,10 +1162,10 @@ select::-ms-expand {
     width: 60%;
     text-align: right;
 }
-
+/*
 .rating-stars-list {
 
-}
+}*/
 
 .rating-stars-list li {
     display: inline-block;
@@ -1161,7 +1175,7 @@ select::-ms-expand {
 
 .rating-star {
     color: #111a25;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 16px;
 }
 
@@ -1421,21 +1435,21 @@ select::-ms-expand {
     padding: 0 0 6px 0;
 }
 
-.good-pg .carousel {
+/*.good-pg .carousel {
     width: 100%;
 }
-
-.good-pg .carousel-inner {
+*/
+/*.good-pg .carousel-inner {
     overflow: hidden;
     height: 205px;
-}
+}*/
 
-.good-pg .carousel-inner {
+/*.good-pg .carousel-inner {
     margin: 10px 0 0 0;
-}
+}*/
 
 
-.good-pg .slider-relgoods .carousel-relgoods {
+/*.good-pg .slider-relgoods .carousel-relgoods {
     display: block;
     width: 85% !important;
     position: relative;
@@ -1447,7 +1461,7 @@ select::-ms-expand {
 
 .good-pg .carousel-control {
     position: relative !important;
-}
+}*/
 
 .good-pg .rating {
     font-size: 0;
@@ -1462,6 +1476,14 @@ select::-ms-expand {
 
 .good-pg .rating .ansvers {
     text-align: right;
+}
+
+.swiper-container .ansvers {
+    text-align: left;
+}
+
+.swiper-container .rating-star{
+    font-size: 14px;
 }
 
 .good-pg .pricecount-box {
@@ -1674,13 +1696,13 @@ select::-ms-expand {
 .action-col-left {
     display: inline-block;
     vertical-align: baseline;
-    width: 60%;
+    width: 61%;
 }
 
 .action-col-left p {
     font-family: Arial, sans-serif;
     color: #b80f0e;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18px;
     font-weight: 700;
 }
@@ -1688,7 +1710,7 @@ select::-ms-expand {
 .action-col-right {
     display: inline-block;
     vertical-align: baseline;
-    width: 40%;
+    width: 39%;
 }
 
 .action-col-right p {

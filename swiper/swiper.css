@@ -155,8 +155,8 @@
   color: #b6172e;
   font-size: 14px;
   line-height: 30px;
+  margin: -1px 0 0 0;
   text-align: center;
-  margin: -4px 0 0 0;
   border: 1px solid #b6172e;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -193,7 +193,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
   width: 100%;
 }
