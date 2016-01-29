@@ -315,6 +315,33 @@ select::-ms-expand {
     background-position: -1px -65px;
 }
 
+.scroll-to-top {
+    display: inline-block;
+    vertical-align: top;
+    opacity: .7;
+    width: 32px;
+    z-index: 99;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(182, 23, 46, 1);
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.scroll-to-top:before {
+    display: block;
+    content: "\e260";
+}
+
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
