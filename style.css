@@ -794,28 +794,28 @@ select::-ms-expand {
     display: block;
     width: 31px;
     height: 30px;
-    background-image: url(img/soclink_sprite.png);
-    background-repeat: no-repeat;
+/*    background-image: url(img/soclink_sprite.png);
+    background-repeat: no-repeat;*/
 }
 
 .facebook {
-    background-position: -5px 0;
+    /*background-position: -5px 0;*/
 }
 
 .twitter {
-    background-position: -45px 0;
+    /*background-position: -45px 0;*/
 }
 
 .google {
-    background-position: -85px 0;
+    /*background-position: -85px 0;*/
 }
 
 .instagram {
-    background-position: -125px 0;
+    /*background-position: -125px 0;*/
 }
 
 .youtube {
-    background-position: -165px 0;
+    /*background-position: -165px 0;*/
 }
 
 .tomainsite {
