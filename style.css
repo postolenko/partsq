@@ -323,12 +323,13 @@ select::-ms-expand {
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    margin: 0 10%;
+    margin: 0 6%;
     width: 23px;
     height: 23px;
-    background-image: url(img/icon_sprite.png);
+/*    background-image: url(img/icon_sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 -3px;
+    background-size: 125%;
+    background-position: 0 -3px;*/
 }
 
 .basket-btn {
@@ -336,11 +337,15 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 3%;
-    width: 26px;
+    width: 23px;
     height: 23px;
-    background-image: url(img/icon_sprite.png);
-    background-repeat: no-repeat;
-    background-position: -1px -65px;
+/*    background-image: url(img/icon_sprite.png);
+    background-repeat: no-repeat;*/
+  /*  background-size: 125%;
+    background-position: -1px -65px;*/
+/*    background-size: 102%;
+    background-position: -1px -59px;*/
+
 }
 
 .scroll-to-top {
@@ -1328,7 +1333,13 @@ select::-ms-expand {
     color: #ffffff;
     font-size: 14px;
     line-height: 22px;
-} 
+}
+
+.goodsh3 .inrow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3%;
+}
 
 .pagination-box {
     text-align: center;
