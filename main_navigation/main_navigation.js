@@ -122,6 +122,8 @@ $(document).ready(function() {
 
 		var coorMenuNav = menuNav.getBoundingClientRect();
 
+		$('#navmenu').draggable();
+
 		console.log( coorMenuNav.left + "  " + $(".menu").css("left"));
 
 		// if( $(".menu").length > 0 ) {
@@ -135,10 +137,16 @@ $(document).ready(function() {
 
 			$(".menu").animate({"left": -1 * 101  + "%"}, 400);
 
+			
+
 			var leftCoorMenu = $(".menu").offset().left;
 
 			console.log(coorMenuNav.left);
 			// console.log( $(".menu").offset().left );
+
+			setTimeout(function() {
+				$(".menu-nav-box").css({"display" : "none"});
+			}, 400);
 
 		} else {
 
@@ -162,7 +170,7 @@ $(document).ready(function() {
 
 		// var menuNav = document.getElementsByClassName("menu")[0];
 
-
+		
 
 
 	});
