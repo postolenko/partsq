@@ -122,7 +122,7 @@ $(document).ready(function() {
 
 		var coorMenuNav = menuNav.getBoundingClientRect();
 
-		$('#navmenu').draggable();
+		// $('#navmenu').draggable();
 
 		console.log( coorMenuNav.left + "  " + $(".menu").css("left"));
 
