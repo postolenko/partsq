@@ -137,7 +137,7 @@ $(document).ready(function() {
 			// $(".menu-nav-box").remove();
 			// $(".menu-nav-box").css({"display" : "none"});
 
-			$(".menu").animate({"left": -1 * 101  + "%"}, 400);			
+			$(".menu").animate({"left": -1 * 101  + "%"}, 300);			
 
 			var leftCoorMenu = $(".menu").offset().left;
 
@@ -148,7 +148,7 @@ $(document).ready(function() {
 
 				$(".menu-nav-box").css({"display" : "none"});
 
-			}, 400);
+			}, 350);
 
 		} else {
 
@@ -158,7 +158,7 @@ $(document).ready(function() {
 
 			$(".menu-nav-box").css({"display":"block"});
 
-			$(".menu").animate({"left": 0  + "%"}, 400);
+			$(".menu").animate({"left": 0  + "%"}, 300);
 
 			var leftCoorMenu = $(".menu").offset().left;
 
