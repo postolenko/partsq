@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 					$(".header-bg").append("<div class='menu-nav-box'></div>");
 
-					$(".menu-nav-box").css({"top": $(".header-bg").outerHeight(true) + "px" });
+					// $(".menu-nav-box").css({"top": $(".header-bg").outerHeight(true) + "px" });
 
 					$(".menu-nav-box").load("menu.html", function() {
 
@@ -128,7 +128,9 @@ $(document).ready(function() {
 
 		// if( $(".menu").length > 0 ) {
 
-		if ( $(".menu").css("left") == "0px" ) {
+		$(".menu-nav-box").css({"top": $(".header-bg").outerHeight(true) + "px" });
+
+		if ( parseInt( $(".menu").css("left") ) >= 0 ) {
 
 			$(".respmenubtn").removeClass("respmenubtn-active");
 
@@ -139,8 +141,8 @@ $(document).ready(function() {
 
 			var leftCoorMenu = $(".menu").offset().left;
 
-			console.log(coorMenuNav.left);
-			// console.log( $(".menu").offset().left );
+			console.log(parseInt( $(".menu").css("left")) );
+
 
 			setTimeout(function() {
 
@@ -160,17 +162,7 @@ $(document).ready(function() {
 
 			var leftCoorMenu = $(".menu").offset().left;
 
-			// console.log(coorMenuNav.left);
-
-			// console.log( $(".menu").offset().left );
-
 		}
-
-		// var leftCoorMenu = $(".menu").offset().left;
-
-		// var menuNav = document.getElementsByClassName("menu")[0];
-
-		
 
 
 	});
