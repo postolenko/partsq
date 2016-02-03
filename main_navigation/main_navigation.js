@@ -128,6 +128,8 @@ $(document).ready(function() {
 
 		// if( $(".menu").length > 0 ) {
 
+		$(".menu-nav-box").height($(window).outerHeight() - $(".header-bg").outerHeight());
+
 		$(".menu-nav-box").css({"top": $(".header-bg").outerHeight(true) + "px" });
 
 		if ( parseInt( $(".menu").css("left") ) >= 0 ) {

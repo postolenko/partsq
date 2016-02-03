@@ -150,7 +150,7 @@ $(document).ready(function() {
 
            $(".testimonials-hover").animate({"height": testimonialsHeight + "px"}, 300);
 
-           if ($(".testimonials-btn .arrow-down").hasClass("glyphicon-triangle-bottom")) {
+            if ($(".testimonials-btn .arrow-down").hasClass("glyphicon-triangle-bottom")) {
 
                 $(".testimonials-btn .arrow-down").removeClass("glyphicon-triangle-bottom");
 
@@ -161,6 +161,7 @@ $(document).ready(function() {
         }        
 
     });
+
 
 
     // Navigation scroll
