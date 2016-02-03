@@ -798,6 +798,13 @@ select::-ms-expand {
     background-repeat: no-repeat;*/
 }
 
+.soc-link img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
 .facebook {
     /*background-position: -5px 0;*/
 }
