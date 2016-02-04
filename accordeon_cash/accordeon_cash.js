@@ -4,18 +4,24 @@ $(document).ready(function() {
 
     var shoppingStepIndex;
 
-    // $(".shopping-step").css({"display":"none"});
+    var stepContentHeight;
 
-    $(".shopping-step-content").css({"display":"none"});
+    $(".shopping-step-content-height").css({"height": 0 + "px"});
 
     $(".shopping-step-item").click(function() {
 
         shoppingStepIndex = $(".shopping-step-item").index(this);
 
-        $(".shopping-step-content").css({"display":"none"});
+        if( $(".shopping-step-content-height:eq("+ shoppingStepIndex +")").outerHeight(true) <= 0 ) {
 
-        $(".shopping-step-content:eq("+ shoppingStepIndex +")").css({"display":"block"});
+            stepContentHeight = $(".shopping-step-content:eq("+ shoppingStepIndex +")").height();
 
+            $(".shopping-step-content-height").animate({"height": 0 + "px"}, 400);
+
+            $(".shopping-step-content-height:eq("+  shoppingStepIndex +")").animate({"height": stepContentHeight + 20 + "px"}, 400);
+
+        }
+    
     });
 
 
@@ -46,6 +52,28 @@ $(document).ready(function() {
 
         $(".step-one-content:eq(" + indexStep + ")").fadeIn(300);
 
+        $(".shopping-step-content-height:eq("+ 0 +")").animate({"height": $(".step-one").height() + "px"}, 400);
+
+
     });
+
+
+
+    $(".steponeradio").click(function() {
+
+        if ( $(this).attr("id") == "guestradiobtn" ) {
+
+            $(".shopping-step-item:eq(1)").text("2.Billing Details");
+
+        } else {
+
+            $(".shopping-step-item:eq(1)").text("2.Account & Billing Details");
+
+        }
+
+    });
+
+
+
 
 });

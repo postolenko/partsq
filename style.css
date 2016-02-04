@@ -1978,6 +1978,7 @@ select::-ms-expand {
     display: block;
     width: 13px;
     height: 13px;
+    cursor: pointer;
     margin: 0 auto;
     border: none;
     background-color: transparent;
@@ -2081,6 +2082,11 @@ select::-ms-expand {
 .shopping-step {
     padding: 17px 0;
     border-bottom: 1px solid #bbbbbb;
+}
+
+.shopping-step-content-height {
+    display: block;
+    overflow: hidden;
 }
 
 .shopping-steps-box h2 {
