@@ -1829,6 +1829,8 @@ select::-ms-expand {
     text-align: left;
     border-bottom: 1px solid transparent;
     padding: 0;
+    width: 93%;
+    margin: 0 auto;
 }
 
 .swiper-slide .item .good-cart-img {
