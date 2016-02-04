@@ -1987,17 +1987,44 @@ select::-ms-expand {
     background-size: 100%;
 }
 
+
+.totalprice-sect {
+    background: rgba(255, 255, 255, 1);
+    padding: 15px 0;
+}
+
 .totalprice-box {
     text-align: right;
 }
 
 .tl-price {
+    font-size: 0;
+    line-height: 0;
+}
+
+.tl-price span {
+    display: inline-block;
+    vertical-align: middle;
     color: #000000;
     font-family: Arial, sans-serif;
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
-    padding: 10px 0;
+    text-align: right;
+}
+
+.tl-price .tl-price-val {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 200px;
+    background: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: right;
 }
 
 .ups-box {

@@ -138,13 +138,13 @@
 								
 								<div class="pricecount-box">
 												
-									<p class="price">$179.00</p>
+									<p class="price">$<span class="priceval">1.00</span></p>
 
 									<div class="count-inpt-box" >
 
-										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus"></i></div>
-										<input class="count-inpt" type="text" />
-										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus"></i></div>
+										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus plusmincount"></i></div>
+										<input class="count-inpt" type="text" value="2" />
+										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus plusmincount"></i></div>
 
 									</div>
 
@@ -174,13 +174,13 @@
 								
 								<div class="pricecount-box">
 												
-									<p class="price">$179.00</p>
+									<p class="price">$<span class="priceval">2.00</span></p>
 
 									<div class="count-inpt-box" >
 
-										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus"></i></div>
-										<input class="count-inpt" type="text" />
-										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus"></i></div>
+										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus plusmincount"></i></div>
+										<input class="count-inpt" type="text" value="1" />
+										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus plusmincount"></i></div>
 
 									</div>
 
@@ -210,13 +210,13 @@
 								
 								<div class="pricecount-box">
 												
-									<p class="price">$179.00</p>
+									<p class="price">$<span class="priceval">3.00</span></p>
 
 									<div class="count-inpt-box" >
 
-										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus"></i></div>
-										<input class="count-inpt" type="text" />
-										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus"></i></div>
+										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus plusmincount"></i></div>
+										<input class="count-inpt" type="text" value="1" />
+										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus plusmincount"></i></div>
 
 									</div>
 
@@ -246,13 +246,13 @@
 								
 								<div class="pricecount-box">
 												
-									<p class="price">$179.00</p>
+									<p class="price">$<span class="priceval">4.00</span></p>
 
 									<div class="count-inpt-box" >
 
-										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus"></i></div>
-										<input class="count-inpt" type="text" />
-										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus"></i></div>
+										<div class="icon-count"><i class="icon-minus glyphicon glyphicon-minus plusmincount"></i></div>
+										<input class="count-inpt" type="text" value="2" />
+										<div class="icon-count"><i class="icon-plus glyphicon glyphicon-plus plusmincount"></i></div>
 
 									</div>
 
@@ -268,14 +268,29 @@
 							
 						</div>
 
+					</div>
+
+				</section>
+
+				<form>
+
+				<section>
+
+					<div class="totalprice-sect">
+
 						<div class="totalprice-box row">
 							
-							<p class="tl-price">Total $ 537</p>
+							<p class="tl-price">
+
+								<span>Total $</span>
+								<span><input class="tl-price-val" type="text" readonly value=""></span>
+
+							</p>
 
 						</div>
 
 					</div>
-
+					
 				</section>
 
 				<section>
@@ -474,75 +489,71 @@
 
 					<div class="shopping-steps-box">
 
-						<form>
+						<div class="shopping-step">
 
-							<div class="shopping-step">
+							<div class="row">
+							
+								<h2 class="shopping-step-item">1. Checkout Options</h2>
 
-								<div class="row">
-								
-									<h2 class="shopping-step-item">1. Checkout Options</h2>
+								<div class="shopping-step-content-height">
 
-									<div class="shopping-step-content-height">
+									<div class="shopping-step-content">
 
-										<div class="shopping-step-content">
-
-											<div class="step step-one">
+										<div class="step step-one">
+											
+											<div class="step-one-h">
 												
-												<div class="step-one-h">
-													
-													<h3 class="active">New Customer</h3>
-													<h3>Returning Customer</h3>
+												<h3 class="active">New Customer</h3>
+												<h3>Returning Customer</h3>
+
+											</div>
+
+											<div class="step-one-content">
+
+												<h3 class="h3inner">Checkout Options</h3>
+
+												<div class="radio">
+
+													<input type="radio" name="account" value="existing" checked="checked" class="steponeradio" id="regradiobtn">
+													<label>Register Account</label>
 
 												</div>
 
-												<div class="step-one-content">
+												<div class="radio">
 
-													<h3 class="h3inner">Checkout Options</h3>
+													<input type="radio" name="account" value="existing" checked="checked" class="steponeradio" id="guestradiobtn">
+													<label>Guest Checkout</label>
 
-													<div class="radio">
-
-														<input type="radio" name="account" value="existing" checked="checked" class="steponeradio" id="regradiobtn">
-														<label>Register Account</label>
-
-													</div>
-
-													<div class="radio">
-
-														<input type="radio" name="account" value="existing" checked="checked" class="steponeradio" id="guestradiobtn">
-														<label>Guest Checkout</label>
-
-													</div>
-
-													<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
-
-													<button>Continue</button>
-													
 												</div>
 
-												<div class="step-one-content">
+												<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
 
-													<h3>I am a returning customer</h3>
+												<button>Continue</button>
+												
+											</div>
 
-													<div class="forminput">
+											<div class="step-one-content">
 
-														<label class="important">E-Mail</label>
-														<input type="text" placeholder="E-Mail" />
+												<h3>I am a returning customer</h3>
 
-													</div>
+												<div class="forminput">
 
-													<div class="forminput">
+													<label class="important">E-Mail</label>
+													<input type="text" placeholder="E-Mail" />
 
-														<label class="important">Password</label>
-														<input type="password" placeholder="Password" />
-
-													</div>
-
-													<a href="">Forgotten Password</a>
-
-													<button>Login</button>
-													
 												</div>
 
+												<div class="forminput">
+
+													<label class="important">Password</label>
+													<input type="password" placeholder="Password" />
+
+												</div>
+
+												<a href="">Forgotten Password</a>
+
+												<button>Login</button>
+												
 											</div>
 
 										</div>
@@ -553,138 +564,138 @@
 
 							</div>
 
-							<div class="shopping-step">
+						</div>
 
-								<div class="row">								
-									
-									<h2 class="shopping-step-item">2.Account & Billing Details</h2>
-									
-									<div class="shopping-step-content-height">
+						<div class="shopping-step">
 
-										<div class="shopping-step-content">
+							<div class="row">								
+								
+								<h2 class="shopping-step-item">2.Account & Billing Details</h2>
+								
+								<div class="shopping-step-content-height">
 
-											<h3 class="detailh3">Your Personal Details</h3>
-											
-											<h4>Customer Group</h4>
+									<div class="shopping-step-content">
 
-											<div class="radio-box">
+										<h3 class="detailh3">Your Personal Details</h3>
+										
+										<h4>Customer Group</h4>
 
-												<input type="radio" name="customer-group"/>
-												<label>Retail Prices</label>
+										<div class="radio-box">
 
-											</div>
+											<input type="radio" name="customer-group"/>
+											<label>Retail Prices</label>
 
-											<div class="radio-box">
+										</div>
 
-												<input type="radio" name="customer-group"/>
-												<label>Wholesale Customers</label>
+										<div class="radio-box">
 
-											</div>
+											<input type="radio" name="customer-group"/>
+											<label>Wholesale Customers</label>
 
-											<div class="forminput">
+										</div>
 
-												<label class="important">First Name</label>
-												<input type="text" placeholder="First Name" />
+										<div class="forminput">
 
-											</div>
+											<label class="important">First Name</label>
+											<input type="text" placeholder="First Name" />
 
-											<div class="forminput">
+										</div>
 
-												<label class="important">E-Mail</label>
-												<input type="text" placeholder="E-Mail" />
+										<div class="forminput">
 
-											</div>
+											<label class="important">E-Mail</label>
+											<input type="text" placeholder="E-Mail" />
 
-											<div class="forminput">
+										</div>
 
-												<label>Telephone</label>
-												<input type="text" placeholder="Telephone" />
+										<div class="forminput">
 
-											</div>
+											<label>Telephone</label>
+											<input type="text" placeholder="Telephone" />
 
-											<!--  -->
+										</div>
 
-											<h3 class="detailh3">Your Address</h3>
+										<!--  -->
 
-											<div class="forminput">
+										<h3 class="detailh3">Your Address</h3>
 
-												<label class="important">Company</label>
-												<input type="pass" placeholder="Company" />
+										<div class="forminput">
 
-											</div>
+											<label class="important">Company</label>
+											<input type="pass" placeholder="Company" />
 
-											<div class="forminput">
+										</div>
 
-												<label class="important">Post Code</label>
-												<input type="text" placeholder="Post Code" />
+										<div class="forminput">
 
-											</div>
+											<label class="important">Post Code</label>
+											<input type="text" placeholder="Post Code" />
 
-											<div class="forminput">
+										</div>
 
-												<label class="important">Region / State</label>
+										<div class="forminput">
 
-												<select>
+											<label class="important">Region / State</label>
 
-													<option> --- Please Select --- </option>
-													<option>Alabama</option>
-													<option>Alaska</option>
-													<option>American Samoa</option>
-													<option>Arizona</option>
-													<option>Arkansas</option>
-													<option>Armed Forces Africa</option>
-													<option>Armed Forces Americas</option>
-													<option>Armed Forces Canada</option>
-													<option>Armed Forces Europe</option>
-													<option>Armed Forces Middle East</option>
-													<option>Armed Forces Pacific</option>
+											<select>
 
-												</select>
+												<option> --- Please Select --- </option>
+												<option>Alabama</option>
+												<option>Alaska</option>
+												<option>American Samoa</option>
+												<option>Arizona</option>
+												<option>Arkansas</option>
+												<option>Armed Forces Africa</option>
+												<option>Armed Forces Americas</option>
+												<option>Armed Forces Canada</option>
+												<option>Armed Forces Europe</option>
+												<option>Armed Forces Middle East</option>
+												<option>Armed Forces Pacific</option>
 
-											</div>
+											</select>
+
+										</div>
 
 
-											<!--  -->
-											
-											<h3 class="detailh3">Your Password</h3>
+										<!--  -->
+										
+										<h3 class="detailh3">Your Password</h3>
 
-											<div class="forminput">
+										<div class="forminput">
 
-												<label class="important">Password</label>
-												<input type="pass" placeholder="Password" />
+											<label class="important">Password</label>
+											<input type="pass" placeholder="Password" />
 
-											</div>
+										</div>
 
-											<div class="forminput">
+										<div class="forminput">
 
-												<label class="important">Password Confirm</label>
-												<input type="text" placeholder="Password Confirm" />
+											<label class="important">Password Confirm</label>
+											<input type="text" placeholder="Password Confirm" />
 
-											</div>
+										</div>
 
-											<div class="checkbox">
+										<div class="checkbox">
 
-												<input type="checkbox" name="newsletter">
-												<label for="newsletter">I wish to subscribe to the PartsQ newsletter.</label>
+											<input type="checkbox" name="newsletter">
+											<label for="newsletter">I wish to subscribe to the PartsQ newsletter.</label>
 
-											</div>
+										</div>
 
-											<div class="checkbox">
+										<div class="checkbox">
 
-												<input type="checkbox" name="shipping_address">
-												<label for="shipping_address">My delivery and billing addresses are the same.</label>
+											<input type="checkbox" name="shipping_address">
+											<label for="shipping_address">My delivery and billing addresses are the same.</label>
 
-											</div>
+										</div>
 
-											<div class="">
+										<div class="">
 
-											  <div class="">I have read and agree to the <a href="" class="agree"><b>Privacy Policy</b></a>
-											    <input type="checkbox" name="agree" value="">
-											    <button type="button">Continue</button>
+										  <div class="">I have read and agree to the <a href="" class="agree"><b>Privacy Policy</b></a>
+										    <input type="checkbox" name="agree" value="">
+										    <button type="button">Continue</button>
 
-											  </div>
-
-											</div>
+										  </div>
 
 										</div>
 
@@ -694,41 +705,41 @@
 
 							</div>
 
-							<div class="shopping-step">
+						</div>
 
-								<div class="row">
+						<div class="shopping-step">
 
-									<h2 class="shopping-step-item">3. I want my item(s) be shipped to :</h2>
+							<div class="row">
 
-									<div class="shopping-step-content-height">
+								<h2 class="shopping-step-item">3. I want my item(s) be shipped to :</h2>
 
-										<div class="shopping-step-content">
+								<div class="shopping-step-content-height">
 
-											<div class="radio">	
+									<div class="shopping-step-content">
 
-												<input type="radio" name="shipping_address" value="existing" checked="checked">
-												<label>I want to use an existing address</label>
+										<div class="radio">	
 
-											</div>
-
-											<div class="forminput">
-
-												<select name="address_id" class="form-control">
-												<option value="" selected="selected">Federated States Of Micronesia, United States</option>
-												</select>
-
-											</div>
-
-											<div class="radio">	
-
-												<input type="radio" name="shipping_address" value="existing" checked="checked">
-												<label>I want to use a new address</label>
-
-											</div>
-
-											<button>Continue</button>
+											<input type="radio" name="shipping_address" value="existing" checked="checked">
+											<label>I want to use an existing address</label>
 
 										</div>
+
+										<div class="forminput">
+
+											<select name="address_id" class="form-control">
+											<option value="" selected="selected">Federated States Of Micronesia, United States</option>
+											</select>
+
+										</div>
+
+										<div class="radio">	
+
+											<input type="radio" name="shipping_address" value="existing" checked="checked">
+											<label>I want to use a new address</label>
+
+										</div>
+
+										<button>Continue</button>
 
 									</div>
 
@@ -736,103 +747,103 @@
 
 							</div>
 
-							<div class="shopping-step">
+						</div>
 
-								<div class="row">
+						<div class="shopping-step">
 
-									<h2 class="shopping-step-item">4. Delivery Method</h2>
+							<div class="row">
 
-									<div class="shopping-step-content-height">
+								<h2 class="shopping-step-item">4. Delivery Method</h2>
 
-										<div class="shopping-step-content">
+								<div class="shopping-step-content-height">
 
-											<p>Please select the preferred shipping method to use on this order.</p>
+									<div class="shopping-step-content">
 
-											<div class="radio">
+										<p>Please select the preferred shipping method to use on this order.</p>
 
-												<h3>United Parcel Service</h3>
+										<div class="radio">
 
-												<input type="radio" name="shipping_method" value="" checked="checked">
-												<label>UPS Ground - $22.98</label>
+											<h3>United Parcel Service</h3>
 
-											</div>
-
-											<div class="radio">
-
-												<h3>Pickup</h3>
-
-												<input type="radio" name="shipping_method" value="" checked="checked">
-												<label>Pickup From Store - $0.00</label>
-
-											</div>
-
-											<h3>Add Comments About Your Order</h3>
-
-											<div class="forminput">
-
-												<textarea name="comment" rows="8" class=""></textarea>
-
-											</div>
-
-											<button>Continue</button>
+											<input type="radio" name="shipping_method" value="" checked="checked">
+											<label>UPS Ground - $22.98</label>
 
 										</div>
+
+										<div class="radio">
+
+											<h3>Pickup</h3>
+
+											<input type="radio" name="shipping_method" value="" checked="checked">
+											<label>Pickup From Store - $0.00</label>
+
+										</div>
+
+										<h3>Add Comments About Your Order</h3>
+
+										<div class="forminput">
+
+											<textarea name="comment" rows="8" class=""></textarea>
+
+										</div>
+
+										<button>Continue</button>
 
 									</div>
 
-								</div>						
+								</div>
 
-							</div>
+							</div>						
+
+						</div>
 
 
-							<div class="shopping-step">
+						<div class="shopping-step">
 
-								<div class="row">
-									
-									<h2 class="shopping-step-item">5. Payment Method</h2>
+							<div class="row">
+								
+								<h2 class="shopping-step-item">5. Payment Method</h2>
 
-									<div class="shopping-step-content-height">
+								<div class="shopping-step-content-height">
 
-										<div class="shopping-step-content">
+									<div class="shopping-step-content">
 
-											<h3>Please select the preferred payment method to use on this order.</h3>
+										<h3>Please select the preferred payment method to use on this order.</h3>
 
-											<div class="radio">	
+										<div class="radio">	
 
-												<input type="radio" name="pay_method" value="existing" checked="checked">
-												<label>Credit Card / Debit Card (Authorize.net)</label>
-
-											</div>
-
-											<div class="radio">	
-
-												<input type="radio" name="pay_method" value="existing" checked="checked">
-												<label>Cash On Delivery</label>
-
-											</div>
-
-											<div class="radio">	
-
-												<input type="radio" name="pay_method" value="existing" checked="checked">
-												<label>Cheque / Money Order</label>
-
-											</div>
-
-											<h3>Add comments about Your Order</h3>
-
-											<div class="forminput">
-
-												<textarea name="comment" rows="8" class=""></textarea>
-
-											</div>
-
-											<div class="">I have read and agree to the <a href="" class="agree"><b>Returns & Replacements</b></a>
-												<input type="checkbox" name="agree" value="">
-											</div>
-
-											<button>Continue</button>
+											<input type="radio" name="pay_method" value="existing" checked="checked">
+											<label>Credit Card / Debit Card (Authorize.net)</label>
 
 										</div>
+
+										<div class="radio">	
+
+											<input type="radio" name="pay_method" value="existing" checked="checked">
+											<label>Cash On Delivery</label>
+
+										</div>
+
+										<div class="radio">	
+
+											<input type="radio" name="pay_method" value="existing" checked="checked">
+											<label>Cheque / Money Order</label>
+
+										</div>
+
+										<h3>Add comments about Your Order</h3>
+
+										<div class="forminput">
+
+											<textarea name="comment" rows="8" class=""></textarea>
+
+										</div>
+
+										<div class="">I have read and agree to the <a href="" class="agree"><b>Returns & Replacements</b></a>
+											<input type="checkbox" name="agree" value="">
+										</div>
+
+										<button>Continue</button>
 
 									</div>
 
@@ -840,137 +851,137 @@
 
 							</div>
 
-							<div class="shopping-step">
+						</div>
 
-								<div class="row">
-									
-									<h2 class="shopping-step-item">6. Confirm Order</h2>
+						<div class="shopping-step">
 
-									<div class="shopping-step-content-height">
+							<div class="row">
+								
+								<h2 class="shopping-step-item">6. Confirm Order</h2>
 
-										<div class="shopping-step-content">
+								<div class="shopping-step-content-height">
 
-											<div class="conf-col confheader">
+									<div class="shopping-step-content">
 
-												<h3>Product Name</h3>
-												<h3>Model</h3>
-												<h3>Quantity</h3>
-												<h3 class="price">Unit Price</h3>
+										<div class="conf-col confheader">
 
-											</div>
-
-											<div class="conf-col first-col" >
-
-												<p><b>International Durastar 4300 Grille</b></p>
-												<p>Q10111</p>
-												<p>1</p>
-												<p class="price">$214.00</p>
-
-											</div>
-
-											<div class="conf-col-right-box clearfix">
-
-												<div class="conf-col-right">
-
-													<h3>Total</h3>
-
-												</div>
-
-												<div class="conf-col-right">
-
-													<p>$214.00</p>
-
-												</div>
-
-												<div class="conf-col-right">
-
-													<h3 class="two-col">Sub-Total:</h3>
-													<p class="two-col">$214.00</p>
-
-												</div>
-
-												<div class="conf-col-right">
-
-													<h3 class="two-col">UPS Ground:</h3>
-													<p class="two-col">$22.98</p>
-
-												</div>
-
-												<div class="conf-col-right">
-
-													<h3 class="two-col">Total:</h3>
-													<p class="two-col">$236.98</p>
-
-												</div>
-
-											</div>
-
-											<h3 class="detailh3">Credit Card Details</h3>
-
-											<div class="formcardinput">
-
-												<label class="important">Card Owner</label>
-												<input type="text" placeholder="Card Owner" />
-
-											</div>
-
-											<div class="formcardinput">
-
-												<label class="important">Card Number</label>
-												<input type="text" placeholder="Card Number" />
-
-											</div>
-
-											<div class="formcardinput clearfix">
-
-												<label class="important">Card Expiry Date</label>
-
-												<select name="" class="">
-
-													<option value="" selected="selected">January</option>
-													<option value="" selected="selected">February</option>
-													<option value="" selected="selected">March</option>
-													<option value="" selected="selected">April</option>
-													<option value="" selected="selected">May</option>
-													<option value="" selected="selected">June</option>
-													<option value="" selected="selected">July</option>
-													<option value="" selected="selected">August</option>
-													<option value="" selected="selected">September</option>
-													<option value="" selected="selected">October</option>
-													<option value="" selected="selected">November</option>
-													<option value="" selected="selected">December</option>
-
-												</select>
-
-												<select name="" class="right-sel">
-
-													<option value="" selected="selected">2015</option>
-													<option value="" selected="selected">2016</option>
-													<option value="" selected="selected">2017</option>
-													<option value="" selected="selected">2018</option>
-													<option value="" selected="selected">2019</option>
-													<option value="" selected="selected">2020</option>
-													<option value="" selected="selected">2021</option>
-													<option value="" selected="selected">2022</option>
-													<option value="" selected="selected">2023</option>
-													<option value="" selected="selected">2024</option>
-													<option value="" selected="selected">2025</option>
-													<option value="" selected="selected">2026</option>
-
-												</select>
-
-											</div>
-
-											<div class="formcardinput">
-
-												<label class="important">Card Sequrity Code (CVV2)</label>
-												<input type="text" placeholder="Card Sequrity Code (CVV2)" />
-
-											</div>
-
-											<button type="submit" class="order">Confirm Order</button>
+											<h3>Product Name</h3>
+											<h3>Model</h3>
+											<h3>Quantity</h3>
+											<h3 class="price">Unit Price</h3>
 
 										</div>
+
+										<div class="conf-col first-col" >
+
+											<p><b>International Durastar 4300 Grille</b></p>
+											<p>Q10111</p>
+											<p>1</p>
+											<p class="price">$214.00</p>
+
+										</div>
+
+										<div class="conf-col-right-box clearfix">
+
+											<div class="conf-col-right">
+
+												<h3>Total</h3>
+
+											</div>
+
+											<div class="conf-col-right">
+
+												<p>$214.00</p>
+
+											</div>
+
+											<div class="conf-col-right">
+
+												<h3 class="two-col">Sub-Total:</h3>
+												<p class="two-col">$214.00</p>
+
+											</div>
+
+											<div class="conf-col-right">
+
+												<h3 class="two-col">UPS Ground:</h3>
+												<p class="two-col">$22.98</p>
+
+											</div>
+
+											<div class="conf-col-right">
+
+												<h3 class="two-col">Total:</h3>
+												<p class="two-col">$236.98</p>
+
+											</div>
+
+										</div>
+
+										<h3 class="detailh3">Credit Card Details</h3>
+
+										<div class="formcardinput">
+
+											<label class="important">Card Owner</label>
+											<input type="text" placeholder="Card Owner" />
+
+										</div>
+
+										<div class="formcardinput">
+
+											<label class="important">Card Number</label>
+											<input type="text" placeholder="Card Number" />
+
+										</div>
+
+										<div class="formcardinput clearfix">
+
+											<label class="important">Card Expiry Date</label>
+
+											<select name="" class="">
+
+												<option value="" selected="selected">January</option>
+												<option value="" selected="selected">February</option>
+												<option value="" selected="selected">March</option>
+												<option value="" selected="selected">April</option>
+												<option value="" selected="selected">May</option>
+												<option value="" selected="selected">June</option>
+												<option value="" selected="selected">July</option>
+												<option value="" selected="selected">August</option>
+												<option value="" selected="selected">September</option>
+												<option value="" selected="selected">October</option>
+												<option value="" selected="selected">November</option>
+												<option value="" selected="selected">December</option>
+
+											</select>
+
+											<select name="" class="right-sel">
+
+												<option value="" selected="selected">2015</option>
+												<option value="" selected="selected">2016</option>
+												<option value="" selected="selected">2017</option>
+												<option value="" selected="selected">2018</option>
+												<option value="" selected="selected">2019</option>
+												<option value="" selected="selected">2020</option>
+												<option value="" selected="selected">2021</option>
+												<option value="" selected="selected">2022</option>
+												<option value="" selected="selected">2023</option>
+												<option value="" selected="selected">2024</option>
+												<option value="" selected="selected">2025</option>
+												<option value="" selected="selected">2026</option>
+
+											</select>
+
+										</div>
+
+										<div class="formcardinput">
+
+											<label class="important">Card Sequrity Code (CVV2)</label>
+											<input type="text" placeholder="Card Sequrity Code (CVV2)" />
+
+										</div>
+
+										<button type="submit" class="order">Confirm Order</button>
 
 									</div>
 
@@ -978,11 +989,13 @@
 
 							</div>
 
-						</form>
+						</div>
 
 					</div>
 
 				</section>
+
+				</form>
 
 
 				<section>
@@ -1041,6 +1054,8 @@
 	<script src="main_navigation/main_navigation.js"></script>
 
 	<script src="accordeon_cash/accordeon_cash.js"></script>
+
+	<script src="cashcalc/cashcalc.js"></script>
 
 	<script>
 		
