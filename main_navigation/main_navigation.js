@@ -1,12 +1,7 @@
 $(document).ready(function() {
 
-	var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-
     var mainLink;
+    var categoryLink;
 
 
     $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
@@ -23,19 +18,17 @@ $(document).ready(function() {
 
 					$(".header-bg").append("<div class='menu-nav-box'></div>");
 
-					// $(".menu-nav-box").css({"top": $(".header-bg").outerHeight(true) + "px" });
-
 					$(".menu-nav-box").load("menu.html", function() {
 
-						// if( $(".menu-nav-box .good a").next(".catlistheight") ) {
+						if ( $(".menu-nav-box .good a").next(".catlistheight") ) {
 
-						// 	console.log($(".menu-nav-box .good .catlistheight").children(".catlist"));
+							categoryLink = $(".menu-nav-box .good a").next(".catlistheight");
 
-						// 	mainLink = $(".menu-nav-box .good .catlistheight a");
+							categoryLink.prev("a").addClass("catname");
 
-						// 	mainLink.first().addClass("catname");
+							categoryLink.prev("a").after( "<i class='arrowcat glyphicon glyphicon-menu-down'></i>" );
 
-						// }
+						}
 
 
 						$(".catlistheight").css({"height": 0});
@@ -66,13 +59,13 @@ $(document).ready(function() {
 
 								var elhListBlock = elhBlock.children(".catlist");
 
-								var itemList = $(this).children(".arrowcat");
+								// var itemList = $(this).children(".arrowcat");
 
 								var elAttr = elhBlock.attr("id");
 
 								// var listHeight = $("#list"+elAttr).height();
 
-								console.log($(this).attr("class"))
+								// console.log($(this).attr("class"))
 
 								if( $("#" + elAttr).height() <= 0 ) {
 
@@ -82,13 +75,13 @@ $(document).ready(function() {
 
 									$("#" + elAttr).css({"height":"auto"});
 
-									console.log(elhListBlock.height());
+									// console.log(elhListBlock.height());
 
-									if ( itemList.hasClass("glyphicon-menu-down") ) {
+									if ( $(this).hasClass("glyphicon-menu-down") ) {
 
-										itemList.removeClass("glyphicon-menu-down");
+										$(this).removeClass("glyphicon-menu-down");
 
-										itemList.addClass("glyphicon-menu-up");
+										$(this).addClass("glyphicon-menu-up");
 
 									}
 
@@ -102,13 +95,13 @@ $(document).ready(function() {
 
 									$("#" + elAttr).css({"height":"0"});
 
-									console.log(elhListBlock.height());
+									// console.log(elhListBlock.height());
 
-									if ( itemList.hasClass("glyphicon-menu-up") ) {
+									if ( $(this).hasClass("glyphicon-menu-up") ) {
 
-										itemList.removeClass("glyphicon-menu-up");
+										$(this).removeClass("glyphicon-menu-up");
 
-										itemList.addClass("glyphicon-menu-down");
+										$(this).addClass("glyphicon-menu-down");
 
 									}
 
@@ -127,7 +120,7 @@ $(document).ready(function() {
 
 	$(".respmenubtn").click(function() {
 
-		console.log( $(".menu").offset().left );
+		// console.log( $(".menu").offset().left );
 
 		var menuNav = document.getElementById("navmenu");
 
@@ -135,7 +128,7 @@ $(document).ready(function() {
 
 		// $('#navmenu').draggable();
 
-		console.log( coorMenuNav.left + "  " + $(".menu").css("left"));
+		// console.log( coorMenuNav.left + "  " + $(".menu").css("left"));
 
 		// if( $(".menu").length > 0 ) {
 
@@ -154,7 +147,7 @@ $(document).ready(function() {
 
 			var leftCoorMenu = $(".menu").offset().left;
 
-			console.log(parseInt( $(".menu").css("left")) );
+			// console.log(parseInt( $(".menu").css("left")) );
 
 
 			setTimeout(function() {

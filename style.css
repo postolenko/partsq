@@ -190,8 +190,13 @@ li {
     list-style: none;
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
+    outline: none;
 }
 
 /*-------------------------------------------*/
@@ -326,10 +331,6 @@ select::-ms-expand {
     margin: 0 6%;
     width: 23px;
     height: 23px;
-/*    background-image: url(img/icon_sprite.png);
-    background-repeat: no-repeat;
-    background-size: 125%;
-    background-position: 0 -3px;*/
 }
 
 .basket-btn {
@@ -339,12 +340,6 @@ select::-ms-expand {
     margin: 0 0 0 3%;
     width: 23px;
     height: 23px;
-/*    background-image: url(img/icon_sprite.png);
-    background-repeat: no-repeat;*/
-  /*  background-size: 125%;
-    background-position: -1px -65px;*/
-/*    background-size: 102%;
-    background-position: -1px -59px;*/
 }
 
 .scroll-to-top {
@@ -352,9 +347,11 @@ select::-ms-expand {
     vertical-align: top;
     opacity: .6;
     width: 32px;
+    height: 32px;
     z-index: 99;
     position: fixed;
-    bottom: 2%;
+    /*bottom: 2%;*/
+    top: 93%;
     right: 2%;
     cursor: pointer;
     color: #ffffff;
@@ -575,29 +572,51 @@ select::-ms-expand {
     border-top: 1px solid transparent;
 }
 
-/*.good a:hover {
-    display: block;
-    width: 100%;
-}*/
-
-.catname {
-/*    font-size: 0;
-    line-height: 0;*/
-    /*display: block;*/
-    /*width: 100%;*/
-/*    height: 100%;
-    display: inline-block;
-    vertical-align: middle;*/
+.good {
+    padding: 1% 0;
 }
 
-.catname {
+.arrowcat {
+    float: right;
+    cursor: pointer;
+    color: #424242;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.good a {
     display: inline-block;
     vertical-align: middle;
-    /*width: 91%;*/
-    /*color: #424242;
-    font-family: Arial, sans-serif;
+    color: #333333;
     font-size: 18px;
-    line-height: 22px;*/
+    line-height: 22px;
+    font-weight: 400;
+    padding: 2.5% 0;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.good .catname {
+    display: inline-block;
+    vertical-align: middle;
     color: #111a25;
     font-size: 18px;
     line-height: 22px;
@@ -625,26 +644,18 @@ select::-ms-expand {
     transition-timing-function: ease;
 }
 
-.catname h3:link,
-.catname h3:visited,
-.catname:link .glyphicon:before,
-.catname:visited .glyphicon:before {
+.good .catname:link,
+.good .catname:visited,
+.good a:link,
+.good a:visited {
     color: #424242;
 }
 
-.catname h3:hover,
-.catname h3:active,
-.catname:hover .glyphicon:before,
-.catname:active .glyphicon:before {
+.good .catname:hover,
+.good .catname:active,
+.good a:hover,
+.good a:active {
     color: #E82541;
-}
-
-.arrowcat {
-    float: right;
-    cursor: pointer;
-    color: #424242;
-    font-size: 18px;
-    line-height: 30px;
 }
 
 .catheight {
@@ -661,47 +672,6 @@ select::-ms-expand {
     padding: 0 0 0 9%;
 }
 
-.good {
-    padding: 1% 0;
-}
-
-.good a {
-    /*display: block;*/
-    color: #424242;
-    font-size: 18px;
-    line-height: 22px;
-    
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: 0.3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: 0.3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-}
-
-.good a:link,
-.good a:visited {
-    color: #424242;
-}
-
-.good a:hover,
-.good a:active {
-    color: #FB4545;
-    text-decoration: none;
-}
 
 /*-- News Letter Section --*/
 

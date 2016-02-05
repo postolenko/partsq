@@ -34,6 +34,18 @@ $(document).ready(function() {
 
 
 
+    if ( $(".categories .categorybox .cat-itembg .good a").next(".catlistheight") ) {
+
+        categoryLink = $(".categories .categorybox .cat-itembg .good a").next(".catlistheight");
+
+        categoryLink.prev("a").addClass("catname");
+
+        categoryLink.prev("a").after( "<i class='arrowcat glyphicon glyphicon-menu-down'></i>" );
+
+    }
+
+
+
 
     $(".icon-plus").click(function(){
 
@@ -130,6 +142,8 @@ $(document).ready(function() {
 
     });
 
+
+
     $(".testimonials-btn").click(function() {
 
         testimonialsHeight = $(".testimonials").height();
@@ -223,17 +237,6 @@ $(document).ready(function() {
         return false;
 
     });
-
-
-    
-
-
-// Remove loading indicator
-
-    $(".ui-loader").remove();
-
-
-
 
 
 });
