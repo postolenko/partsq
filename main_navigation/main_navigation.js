@@ -6,6 +6,8 @@ $(document).ready(function() {
     g = d.getElementsByTagName('body')[0],
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+    var mainLink;
+
 
     $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
 
@@ -25,7 +27,16 @@ $(document).ready(function() {
 
 					$(".menu-nav-box").load("menu.html", function() {
 
-						console.log("add");
+						// if( $(".menu-nav-box .good a").next(".catlistheight") ) {
+
+						// 	console.log($(".menu-nav-box .good .catlistheight").children(".catlist"));
+
+						// 	mainLink = $(".menu-nav-box .good .catlistheight a");
+
+						// 	mainLink.first().addClass("catname");
+
+						// }
+
 
 						$(".catlistheight").css({"height": 0});
 
@@ -41,7 +52,7 @@ $(document).ready(function() {
 						}
 				
 
-						$(".catname").click(function() {
+						$(".arrowcat").click(function() {
 
 							if( $(this).next(".catlistheight") ) {
 

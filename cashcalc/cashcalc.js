@@ -35,9 +35,7 @@ $(document).ready(function() {
 
 		indexDel = $(".cash-good-right-col button").index(this);
 
-		console.log(indexDel);
-
-		$(".cash-good:eq("+ indexDel +")").fadeOut(350);
+		$(".cash-good:eq("+ indexDel +")").fadeOut(150);
 
 		setTimeout(function() {
 
@@ -47,7 +45,7 @@ $(document).ready(function() {
 
 			getTotalPrice();
 
-		}, 450);
+		}, 600);
 
 
 	});

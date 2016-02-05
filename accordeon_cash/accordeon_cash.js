@@ -6,6 +6,9 @@ $(document).ready(function() {
 
     var stepContentHeight;
 
+    var indexnextstepshopBtn;
+
+
     $(".shopping-step-content-height").css({"height": 0 + "px"});
 
     $(".shopping-step-item").click(function() {
@@ -56,6 +59,29 @@ $(document).ready(function() {
 
 
     });
+
+
+
+
+
+    $(".nextstepshop-btn").click(function() {
+
+        indexnextstepshopBtn = $(".nextstepshop-btn").index(this);
+
+        shoppingStepIndex = indexnextstepshopBtn + 1;
+
+        if( $(".shopping-step-content-height:eq("+ shoppingStepIndex +")").outerHeight(true) <= 0 ) {
+
+            stepContentHeight = $(".shopping-step-content:eq("+ shoppingStepIndex +")").height();
+
+            $(".shopping-step-content-height").animate({"height": 0 + "px"}, 400);
+
+            $(".shopping-step-content-height:eq("+  shoppingStepIndex +")").animate({"height": stepContentHeight + 20 + "px"}, 400);
+
+        }
+
+    });
+
 
 
 
