@@ -145,7 +145,7 @@ body {
     display: table-row;
     height: 100%;
     min-width: 100%;
-    background: rgba(255, 255, 255, 1);
+    /*background: rgba(255, 255, 255, 1);*/
 }
 
 .clearfix:after {
@@ -1431,34 +1431,6 @@ select::-ms-expand {
     padding: 0 0 6px 0;
 }
 
-/*.good-pg .carousel {
-    width: 100%;
-}
-*/
-/*.good-pg .carousel-inner {
-    overflow: hidden;
-    height: 205px;
-}*/
-
-/*.good-pg .carousel-inner {
-    margin: 10px 0 0 0;
-}*/
-
-
-/*.good-pg .slider-relgoods .carousel-relgoods {
-    display: block;
-    width: 85% !important;
-    position: relative;
-}
-
-.carousel-relgoods .carousel-inner {
-    height: 250px !important;
-}
-
-.good-pg .carousel-control {
-    position: relative !important;
-}*/
-
 .good-pg .rating {
     font-size: 0;
     line-height: 0;
@@ -1623,6 +1595,10 @@ select::-ms-expand {
 .action-sect {
     background: rgba(255, 255, 255, 1);
     padding: 10px 0;
+}
+
+.relgoods-box .swiper-container {
+    background: rgba(255, 255, 255, 1);
 }
 
 .actionh-box {
