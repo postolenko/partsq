@@ -1146,7 +1146,7 @@ select::-ms-expand {
 .price {
     display: inline-block;
     vertical-align: middle;
-    width: 50%;
+    width: 48%;
     background: rgba(255, 250, 47, 1);
     color: #282a36;
     font-family: "Arial Bold", Arial, Verdana, sans-serif;
@@ -1164,7 +1164,7 @@ select::-ms-expand {
 .count-inpt-box {
     display: inline-block; 
     vertical-align: middle; 
-    width: 50%;
+    width: 52%;
     font-size: 14px; 
     line-height: 26px;
     text-align: right;
