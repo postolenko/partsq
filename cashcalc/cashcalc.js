@@ -22,8 +22,6 @@ $(document).ready(function() {
 
 			priceVal += parseInt( $(".cash-good-middle-col .priceval:eq("+ indexPrice +")").text() * parseInt( $(".count-inpt:eq("+ indexPrice +")").val() )  );
 
-			console.log(parseInt( $(".cash-good-middle-col .count-inpt:eq("+ indexPrice +")").attr("value") ) );
-
 		}
 
 		$(".tl-price-val").attr("value", priceVal);
@@ -35,11 +33,13 @@ $(document).ready(function() {
 
 		indexDel = $(".cash-good-right-col button").index(this);
 
-		$(".cash-good:eq("+ indexDel +")").fadeOut(150);
+		// $(".cash-good:eq("+ indexDel +")").fadeOut(150);
+
+		$(".cash-good:eq("+ indexDel +")").remove();
 
 		setTimeout(function() {
 
-			$(".cash-good:eq("+ indexDel +")").remove();
+			// $(".cash-good:eq("+ indexDel +")").remove();
 
 			countPrices = $(".cash-good-middle-col .priceval").length - 1;
 

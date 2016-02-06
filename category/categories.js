@@ -1,45 +1,66 @@
 $(document).ready(function() {
 
-	$(".catheight").css({"height": 0});
+	$(".catlistheight").css({"height": 0});
 
-	var categoryListHeight;
-	var indexCategory;
+	var childList;
+	var elhBlock;
+	var elhListBlock;
+	var itemList;
+	var elAttr;
 
-	
+
+	for(var index = 0; index <= $(".catlistheight").length - 1; ++index) {
+
+		$(".catlistheight:eq("+ index +")").attr("id","cat_"+ index);
+
+		childList = $(".catlistheight:eq("+ index +")").children(".catlist");
+
+		childList.attr("id","listcat_"+ index);
+
+	}
 
 	
 
 	$(".catname").click(function() {
 
-		indexCategory = $(".catname").index(this);
+		if( $(this).next(".catlistheight") ) {
 
-		categoryListHeight = $(".catlist:eq("+ indexCategory +")").height();
+			elhBlock = $(this).next(".catlistheight");
 
-		if ( $(".catheight:eq("+ indexCategory +")").height() > 0 ) {
+			elhListBlock = elhBlock.children(".catlist");
 
-			$(".catheight:eq("+ indexCategory +")").animate({"height": 0}, 400);			
+			itemList = $(this).children(".arrowcat");
 
-			if ($(".arrowcat:eq("+ indexCategory +")").hasClass("glyphicon-menu-up")) {
+			elAttr = elhBlock.attr("id");
 
-				$(".arrowcat:eq("+ indexCategory +")").removeClass("glyphicon-menu-up");
+			if( $("#" + elAttr).height() <= 0 ) {
 
-				$(".arrowcat:eq("+ indexCategory +")").addClass("glyphicon-menu-down");
+				$("#" + elAttr).css({"height":"auto"});
 
-			}			
+				if ( itemList.hasClass("glyphicon-menu-down") ) {
 
-		} else {
+					itemList.removeClass("glyphicon-menu-down");
 
-			$(".catheight:eq("+ indexCategory +")").animate({"height": categoryListHeight + "px"}, 400);
+					itemList.addClass("glyphicon-menu-up");
 
-			if ($(".arrowcat:eq("+ indexCategory +")").hasClass("glyphicon-menu-down")) {
+				}
 
-				$(".arrowcat:eq("+ indexCategory +")").removeClass("glyphicon-menu-down");
+			} else {
 
-				$(".arrowcat:eq("+ indexCategory +")").addClass("glyphicon-menu-up");
+				$("#" + elAttr).css({"height":"0"});
 
-			}		
-		
+				if ( itemList.hasClass("glyphicon-menu-up") ) {
+
+					itemList.removeClass("glyphicon-menu-up");
+
+					itemList.addClass("glyphicon-menu-down");
+
+				}
+
+			}
+
 		}
+
 
 	});
 

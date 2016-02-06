@@ -12,9 +12,6 @@
 
 	<meta name="description" content="">
 
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"> 	-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.css"> -->
-	
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
@@ -733,12 +730,13 @@
 
 
 	<script src="js/scripts.js"></script>
-	<script src="category/categories1.js"></script>
-
-	<!-- JavaScript код  навигационного меню -->
+	<script src="category/categories.js"></script>
 
 	<script src="main_navigation/main_navigation.js"></script>
 
+	<script src="accordeon_cash/accordeon_cash.js"></script>
+
+	<script src="cashcalc/cashcalc.js"></script>
 
 	<script>
 		
@@ -768,10 +766,19 @@
 
 	    	});
 
+	    	var sl3 = new Swiper(".swiper-container-3", {
+
+	    		pagination: ".swiper-pag-3",
+		        paginationClickable: true,
+		        nextButton: ".swiper-button-next",
+		        prevButton: ".swiper-button-prev",
+		        spaceBetween: 0
+
+	    	});
+
 	    }, 3000);
 
 	</script>
-
 
 	</div>
 

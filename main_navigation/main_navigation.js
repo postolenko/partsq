@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
-    var mainLink;
     var categoryLink;
+    var index;
+	var childList;
+	var menuNav;
+	var coorMenuNav;
+	var leftCoorMenu;
 
 
     $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
@@ -20,6 +24,10 @@ $(document).ready(function() {
 
 					$(".menu-nav-box").load("menu.html", function() {
 
+						var elhBlock;
+						var elhListBlock;
+						var elAttr;
+
 						if ( $(".menu-nav-box .good a").next(".catlistheight") ) {
 
 							categoryLink = $(".menu-nav-box .good a").next(".catlistheight");
@@ -34,11 +42,11 @@ $(document).ready(function() {
 						$(".catlistheight").css({"height": 0});
 
 
-						for(var index = 0; index <= $(".catlistheight").length - 1; ++index) {
+						for(index = 0; index <= $(".catlistheight").length - 1; ++index) {
 
 							$(".catlistheight:eq("+ index +")").attr("id","cat_"+ index);
 
-							var childList = $(".catlistheight:eq("+ index +")").children(".catlist");
+							childList = $(".catlistheight:eq("+ index +")").children(".catlist");
 
 							childList.attr("id","listcat_"+ index);
 
@@ -49,33 +57,15 @@ $(document).ready(function() {
 
 							if( $(this).next(".catlistheight") ) {
 
-								// $(this).offset().top;
+								elhBlock = $(this).next(".catlistheight");
 
-								// $(document).offset().top = $(this).offset().top;
+								elhListBlock = elhBlock.children(".catlist");
 
-								// console.log($(this).offset().top);
-
-								var elhBlock = $(this).next(".catlistheight");
-
-								var elhListBlock = elhBlock.children(".catlist");
-
-								// var itemList = $(this).children(".arrowcat");
-
-								var elAttr = elhBlock.attr("id");
-
-								// var listHeight = $("#list"+elAttr).height();
-
-								// console.log($(this).attr("class"))
+								elAttr = elhBlock.attr("id");
 
 								if( $("#" + elAttr).height() <= 0 ) {
 
-									// elhListBlock.css({"height": "auto"});
-
-									// $("#" + elAttr).animate({"height": elhListBlock.height() + "px"}, 300);
-
 									$("#" + elAttr).css({"height":"auto"});
-
-									// console.log(elhListBlock.height());
 
 									if ( $(this).hasClass("glyphicon-menu-down") ) {
 
@@ -87,15 +77,7 @@ $(document).ready(function() {
 
 								} else {
 
-									// $("#" + elAttr).css({"height": 0});
-
-									// elhListBlock.css({"height": "0"});
-
-									// $("#" + elAttr).animate({"height": 0}, 300);
-
 									$("#" + elAttr).css({"height":"0"});
-
-									// console.log(elhListBlock.height());
 
 									if ( $(this).hasClass("glyphicon-menu-up") ) {
 
@@ -120,17 +102,9 @@ $(document).ready(function() {
 
 	$(".respmenubtn").click(function() {
 
-		// console.log( $(".menu").offset().left );
+		menuNav = document.getElementById("navmenu");
 
-		var menuNav = document.getElementById("navmenu");
-
-		var coorMenuNav = menuNav.getBoundingClientRect();
-
-		// $('#navmenu').draggable();
-
-		// console.log( coorMenuNav.left + "  " + $(".menu").css("left"));
-
-		// if( $(".menu").length > 0 ) {
+		coorMenuNav = menuNav.getBoundingClientRect();
 
 		$(".menu-nav-box").height($(window).outerHeight() - $(".header-bg").outerHeight());
 
@@ -140,19 +114,13 @@ $(document).ready(function() {
 
 			$(".respmenubtn").removeClass("respmenubtn-active");
 
-			// $(".menu-nav-box").remove();
-			// $(".menu-nav-box").css({"display" : "none"});
-
 			$(".menu").animate({"left": -1 * 101  + "%"}, 300);			
 
-			var leftCoorMenu = $(".menu").offset().left;
-
-			// console.log(parseInt( $(".menu").css("left")) );
-
+			leftCoorMenu = $(".menu").offset().left;
 
 			setTimeout(function() {
 
-				$(".menu-nav-box").css({"display" : "none"});
+				$(".menu-nav-box").fadeOut(300);
 
 			}, 350);
 
@@ -166,7 +134,7 @@ $(document).ready(function() {
 
 			$(".menu").animate({"left": 0  + "%"}, 300);
 
-			var leftCoorMenu = $(".menu").offset().left;
+			leftCoorMenu = $(".menu").offset().left;
 
 		}
 

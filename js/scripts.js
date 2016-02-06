@@ -3,11 +3,8 @@ $(document).ready(function() {
 
     $("body").css({"padding-top": $(".header-bg").outerHeight(true) + "px"});
 
-    var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    var descritionHeight;
+    var indexCount;
 
     getScrollToTopBtn();
 
@@ -49,9 +46,9 @@ $(document).ready(function() {
 
     $(".icon-plus").click(function(){
 
-        index = $( ".icon-plus" ).index( this );
+        indexCount = $( ".icon-plus" ).index( this );
 
-        countCustomers = parseFloat($(".count-inpt:eq("+index+")").val());
+        countCustomers = parseFloat($(".count-inpt:eq("+indexCount+")").val());
 
         if( countCustomers <= 0 || !$.isNumeric(countCustomers) ) {
     
@@ -63,7 +60,7 @@ $(document).ready(function() {
 
         }
 
-        $(".count-inpt:eq("+index+")").val(countCustomers);
+        $(".count-inpt:eq("+indexCount+")").val(countCustomers);
 
     });
 
@@ -71,9 +68,9 @@ $(document).ready(function() {
 
     $(".icon-minus").click(function(){
 
-        index = $( ".icon-minus" ).index( this );
+        indexCount = $( ".icon-minus" ).index( this );
 
-        countCustomers = parseFloat($(".count-inpt:eq("+index+")").val());
+        countCustomers = parseFloat($(".count-inpt:eq("+indexCount+")").val());
 
         if( countCustomers <= 0 || !$.isNumeric(countCustomers) ) {
             
@@ -85,7 +82,7 @@ $(document).ready(function() {
 
         }
 
-        $(".count-inpt:eq("+index+")").val(countCustomers);
+        $(".count-inpt:eq("+indexCount+")").val(countCustomers);
 
     });
 
@@ -108,7 +105,6 @@ $(document).ready(function() {
 
     });
 
-    var descritionHeight;
 
     $(".desc-btn").click(function() {
 
@@ -177,40 +173,7 @@ $(document).ready(function() {
     });
 
 
-
-    
-
-
-
-
-
-
-
-
-    // Navigation scroll
-
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 700);
-                    return false;
-                }
-            }
-        });
-    });
-
-
-    
-
-
-
-    // Show or hide ".scroll-to-top" button 
+   // Show or hide ".scroll-to-top" button 
     function getScrollToTopBtn() {
 
         if ($(window).scrollTop() > $('.head-section').height() ) {

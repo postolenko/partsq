@@ -4,28 +4,31 @@
 /*-- Fonts --*/
 /*------------------*/
 
-
-
-/*@font-face {
-  font-family: "Arial Black";
-  src: url("fonts/Arial-Black.eot?#iefix") format("embedded-opentype"),
-          url("fonts/Arial-Black.woff") format("woff"),
-          url("fonts/Arial-Black.ttf")  format("truetype"),
-          url("fonts/Arial-Black.svg#Arial-Black") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}*/
+@font-face {
+    font-family: "Arial";
+    src: url("fonts/ArialMT.eot");
+    src: url("fonts/ArialMT.eot?#iefix") format("embedded-opentype"),
+        url("fonts/ArialMT.woff2") format("woff2"),
+        url("fonts/ArialMT.woff") format("woff"),
+        url("fonts/ArialMT.ttf") format("truetype"),
+        url("fonts/ArialMT.svg#ArialMT") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 @font-face {
-  font-family: "Arial Black";
-  src: url("fonts/Arial-Black.eot?#iefix") format("embedded-opentype"),
-          url("fonts/Arial-Black.svg#Arial-Black") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Arial Bold";
+    src: url("fonts/Arial-BoldMT.eot");
+    src: url("fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Arial-BoldMT.woff2") format("woff2"),
+        url("fonts/Arial-BoldMT.woff") format("woff"),
+        url("fonts/Arial-BoldMT.ttf") format("truetype"),
+        url("fonts/Arial-BoldMT.svg#Arial-BoldMT") format("svg");
+    font-weight: 700;
+    font-style: normal;
 }
 
-/*-- Icon Fonts --*/
 
 @font-face {
 	font-family: "Glyphicons Halflings";
@@ -76,10 +79,6 @@
     content: "\e008";
 }
 
-/*.glyphicon-remove:before {
-    content: "\e014";
-}*/
-
 .glyphicon-ok:before {
     content: "\e013";
 }
@@ -117,7 +116,7 @@
 html {
     background-color: #ffffff;
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 21px;
 }
@@ -146,7 +145,6 @@ body {
     height: 100%;
     min-width: 100%;
     max-width: 600px;
-    /*background: rgba(255, 255, 255, 1);*/
 }
 
 .clearfix:after {
@@ -171,7 +169,7 @@ body {
 
 h1 {
     color: #f24841;
-    font-family: "Arial Black", Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
@@ -181,7 +179,7 @@ h1 {
 
 h2 {
     color: #202020;
-    font-family: "OpenSans-Light", Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 48px;
     line-height: 48px;
     font-weight: 300;
@@ -354,15 +352,13 @@ select::-ms-expand {
 }
 
 .scroll-to-top {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     opacity: .6;
     width: 32px;
     height: 32px;
-    z-index: 99;
+    z-index: 999;
     position: fixed;
-    /*bottom: 2%;*/
-    top: 93%;
+    bottom: 3%;
     right: 2%;
     cursor: pointer;
     color: #ffffff;
@@ -381,7 +377,6 @@ select::-ms-expand {
     display: block;
     content: "\e260";
 }
-
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -457,7 +452,7 @@ select::-ms-expand {
     vertical-align: middle;
     width: 88%;
     color: #424242;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, sans-serif;
     font-size: 32px;
     line-height: 34px;
     font-weight: 700;
@@ -478,11 +473,12 @@ select::-ms-expand {
     width: 58%;
     border: none;
     background: rgba(255, 255, 255, 1);
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #424242;
     font-size: 20px;
     line-height: 25px;
     padding: 3% 1%;
+    border: 1px solid transparent;
     -webkit-border-radius: 2px 0 0 2px;
     -moz-border-radius: 2px 0 0 2px;
     -o-border-radius: 2px 0 0 2px;
@@ -496,7 +492,7 @@ select::-ms-expand {
     border: none;
     background: rgba(255, 237, 0, 1);
     cursor: pointer;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #424242;
     font-size: 24px;
     line-height: 25px;
@@ -558,14 +554,12 @@ select::-ms-expand {
 }
 
 
-
-
 /*-- Categories --*/
 
 .headsecond {
     background: rgba(255, 237, 0, 1);
     color: #424242;
-    font-family: "Arial", Arial, sans-serif;
+    font-family: "Arial Bold", Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -629,6 +623,7 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: middle;
     color: #111a25;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -693,7 +688,7 @@ select::-ms-expand {
 
 .letterformhead {
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 18px;
     line-height: 22px;
     padding: 0 0 5px 0;
@@ -703,7 +698,7 @@ select::-ms-expand {
     width: 100%;
     border: none;
     background: rgba(255, 255, 255, 1);
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #424242;
     font-size: 24px;
     line-height: 30px;
@@ -720,7 +715,7 @@ select::-ms-expand {
     border: none;
     background: rgba(255, 237, 0, 1);
     cursor: pointer;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #424242;
     font-size: 24px;
     line-height: 30px;
@@ -781,8 +776,6 @@ select::-ms-expand {
     display: block;
     width: 31px;
     height: 30px;
-/*    background-image: url(img/soclink_sprite.png);
-    background-repeat: no-repeat;*/
 }
 
 .soc-link img {
@@ -790,26 +783,6 @@ select::-ms-expand {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-}
-
-.facebook {
-    /*background-position: -5px 0;*/
-}
-
-.twitter {
-    /*background-position: -45px 0;*/
-}
-
-.google {
-    /*background-position: -85px 0;*/
-}
-
-.instagram {
-    /*background-position: -125px 0;*/
-}
-
-.youtube {
-    /*background-position: -165px 0;*/
 }
 
 .tomainsite {
@@ -821,7 +794,7 @@ select::-ms-expand {
     background: rgba(66, 66, 66, 1);
     border: 1px solid #8e8e8e;
     cursor: pointer;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -871,7 +844,6 @@ select::-ms-expand {
     position: fixed;
     top: 0;
     left: 0;
-    /*left: -100%;*/
     background-color: rgba(0, 0, 0, .7);
 }
 
@@ -896,7 +868,7 @@ select::-ms-expand {
 
 .sinlink {
     width: auto;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -942,14 +914,6 @@ select::-ms-expand {
     margin: 0 0 0 -5%;
 }
 
-.blocklistactive {
-    /*min-height: auto;*/
-}
-
-.catlist {
-    /*overflow: hidden;*/
-}
-
 
 /*-- Menu Footer --*/
 
@@ -966,7 +930,7 @@ select::-ms-expand {
 
 .menufooterh {
     padding: 15px 0;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -1005,7 +969,7 @@ select::-ms-expand {
 }
 
 .categoryhead {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #ffffff;
     font-size: 25px;
     line-height: 30px;
@@ -1123,24 +1087,17 @@ select::-ms-expand {
 
 .goodcart-dec h3 {
     color: #111a25;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 11px;
     line-height: 15px;
     font-weight: 700;
     padding: 0 0 6px 0;
 }
 
-/*.procode-box {
-    display: inline-block;
-    vertical-align: middle;
-    width: 58%;
-    padding: 5px 0;
-}*/
-
 .ansvers {
     display: inline-block;
     vertical-align: middle;
     width: 40%;
-    /*text-align: right;*/
 }
 
 .ansvers p {
@@ -1162,10 +1119,6 @@ select::-ms-expand {
     width: 60%;
     text-align: right;
 }
-/*
-.rating-stars-list {
-
-}*/
 
 .rating-stars-list li {
     display: inline-block;
@@ -1178,7 +1131,6 @@ select::-ms-expand {
     font-size: 15px;
     line-height: 16px;
 }
-
 
 .procode-box {
     padding: 5px 0;
@@ -1197,7 +1149,7 @@ select::-ms-expand {
     width: 50%;
     background: rgba(255, 250, 47, 1);
     color: #282a36;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 15px;
     line-height: 18px;
     padding: 4% 6%;
@@ -1208,7 +1160,6 @@ select::-ms-expand {
     -o-border-radius: 10px 0 10px 0;
     border-radius: 10px 0 10px 0;
 }
-
 
 .count-inpt-box {
     display: inline-block; 
@@ -1262,8 +1213,10 @@ select::-ms-expand {
     width: 100%;
     margin: 20px 0 10px 0;
     padding: 2% 1%;
+    cursor: pointer;
     color: #ffffff;
     background-color: rgba(182, 23, 46, 1);
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 14px; 
     line-height: 24px;
     font-weight: 700;
@@ -1324,7 +1277,7 @@ select::-ms-expand {
 }
 
 .goodsh3 h3 {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #ffffff;
     font-size: 14px;
     line-height: 22px;
@@ -1360,6 +1313,7 @@ select::-ms-expand {
     padding: 2px 5px 0 5px;
     cursor: pointer;
     color: #000000;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -1435,6 +1389,7 @@ select::-ms-expand {
 
 .tovarpghead {
     color: #111a25;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -1525,7 +1480,7 @@ select::-ms-expand {
 .desc-box h3 {
     float: left;
     color: #1e1e1e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -1559,7 +1514,6 @@ select::-ms-expand {
     line-height: 13px;
 }
 
-
 .testimonials-box {
     font-size: 0;
     line-height: 0;
@@ -1569,7 +1523,7 @@ select::-ms-expand {
 .testimonials-box h3 {
     float: left;
     color: #1e1e1e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -1585,7 +1539,7 @@ select::-ms-expand {
 
 .descriptions p {
     color: #1e1e1e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 19px;
 }
@@ -1597,7 +1551,7 @@ select::-ms-expand {
 
 .testimonials p {
     color: #1e1e1e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 19px;
 }
@@ -1617,7 +1571,7 @@ select::-ms-expand {
 
 .actionh {
     background: rgba(254, 220, 0, 1);
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     color: #010101;
     font-size: 20px;
     line-height: 26px;
@@ -1662,7 +1616,7 @@ select::-ms-expand {
 }
 
 .action-thumb h3 {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     color: #000000;
     font-size: 12px;
     line-height: 16px;
@@ -1682,7 +1636,7 @@ select::-ms-expand {
 }
 
 .action-col-left p {
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     color: #b80f0e;
     font-size: 15px;
     line-height: 18px;
@@ -1696,7 +1650,7 @@ select::-ms-expand {
 }
 
 .action-col-right p {
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     color: #79777f;
     font-size: 13px;
     line-height: 16px;
@@ -1711,7 +1665,7 @@ select::-ms-expand {
     border: none;
     background: rgba(182, 23, 46, 1);
     padding: 2.5% 3% 2% 3%;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     color: #ffffff;
     font-size: 13px;
     line-height: 16px;
@@ -1764,7 +1718,7 @@ select::-ms-expand {
     vertical-align: middle;
     width: 62%;
     color: #b6172e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 19px;
     line-height: 21px;
     margin: 0 1%;
@@ -1809,7 +1763,6 @@ select::-ms-expand {
 }
 
 
-
 .swipper-slider-main,
 .slider-sw,
 .swiper-container {
@@ -1847,8 +1800,6 @@ select::-ms-expand {
 }
 
 
-
-
 .swiper-container-3 {
     height: 130px;
 }
@@ -1883,9 +1834,6 @@ select::-ms-expand {
 }
 
 
-
-
-
 .cash-good-box {
     background: rgba(255, 255, 255, 1);
 }
@@ -1917,7 +1865,7 @@ select::-ms-expand {
 
 .cashgoodh {
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 11px;
     line-height: 14px;
     font-weight: 700;
@@ -1971,7 +1919,7 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: middle;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
@@ -1985,7 +1933,7 @@ select::-ms-expand {
     background: rgb(255, 255, 255);
     border: 1px solid transparent;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: "Arial Bold", Arial, Verdana, sans-serif;
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
@@ -2008,7 +1956,7 @@ select::-ms-expand {
     vertical-align: middle;
     width: 62%;
     color: #b6172e;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 19px;
     line-height: 21px;
     margin: 0 1% 2% 1%;
@@ -2057,14 +2005,11 @@ select::-ms-expand {
     color: #ffffff;
     background: rgba(182, 23, 46, 1);
     text-transform: uppercase;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 9px;
     line-height: 14px;
     padding: 7% 7% 5% 7%;
 }
-
-
-
 
 
 .shopping-steps-box {
@@ -2084,11 +2029,9 @@ select::-ms-expand {
 .shopping-steps-box h2 {
     cursor: pointer;
     color: #333333;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 18px;
     line-height: 36px;
-    /*margin: 0 0 2% 0;*/
-
 }
 
 .shopping-steps-box h3 {
@@ -2202,14 +2145,14 @@ select::-ms-expand {
 }
 
 .step-one p {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 11px;
     line-height: 16px;
 }
 
 .step-one a {
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 13px;
     line-height: 16px;
 }
@@ -2236,7 +2179,7 @@ select::-ms-expand {
     height: 5px;
     margin: 0 7px 5px 0;
     color: #ff0000;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 19px;
     line-height: 19px;
 }
@@ -2250,7 +2193,7 @@ select::-ms-expand {
 
 .forminput label {
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 21px;
 }
@@ -2259,7 +2202,7 @@ select::-ms-expand {
 .forminput select,
 .forminput textarea {
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
     padding: 2%;
@@ -2267,7 +2210,7 @@ select::-ms-expand {
 }
 
 .detailh3 {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
     padding: 2% 0;
@@ -2276,7 +2219,7 @@ select::-ms-expand {
 
 .agree {
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
@@ -2307,7 +2250,7 @@ select::-ms-expand {
     vertical-align: middle;
     width: 15%;
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 13px;
 }
@@ -2343,7 +2286,7 @@ select::-ms-expand {
     vertical-align: middle;
     width: 15%;
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 13px;
 }
@@ -2382,7 +2325,7 @@ select::-ms-expand {
 .conf-col-right h3 {
     padding: 7px 0;
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 13px;
 }
@@ -2390,7 +2333,7 @@ select::-ms-expand {
 .conf-col-right p {
     padding: 7px 0;
     color: #3d3d3d;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 12px;
     line-height: 13px;
 }
@@ -2416,7 +2359,7 @@ select::-ms-expand {
 .formcardinput label {
     width: 40%;
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 21px;
 }
@@ -2429,14 +2372,14 @@ select::-ms-expand {
     height: 5px;
     margin: 0 7px 5px 0;
     color: #ff0000;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 19px;
     line-height: 19px;
 }
 
 .formcardinput input {
     width: 60%;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     padding: 1.5% 1%;
@@ -2445,7 +2388,7 @@ select::-ms-expand {
 
 .formcardinput select {
     width: 27%;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     padding: 1%;
@@ -2458,7 +2401,7 @@ select::-ms-expand {
 
 .shopping-steps-box .order {
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
     padding: 2% 5%;
@@ -2491,7 +2434,7 @@ select::-ms-expand {
 
 .confpassemail h1 {
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 19px;
     line-height: 21px;
     margin: 10px 0;
@@ -2500,7 +2443,7 @@ select::-ms-expand {
 .confpassemail label {
     width: 100%;
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 21px;
     margin: 5px 0;
