@@ -4,6 +4,9 @@ $(document).ready(function() {
 	var indexPrice;
 	var priceVal = 0;
 
+	var pricevaltext;
+	var inputPriceVal;
+
 	var indexDel;
 
 	getTotalPrice();
@@ -14,13 +17,38 @@ $(document).ready(function() {
 
 	});
 
+
+
+	$( ".count-inpt" ).keyup(function() {
+
+		getTotalPrice();
+
+	});
+
+
+
+
 	function getTotalPrice() {
 
 		priceVal = 0;
 
 		for ( indexPrice = 0; indexPrice <= countPrices; ++indexPrice ) {
 
-			priceVal += parseInt( $(".cash-good-middle-col .priceval:eq("+ indexPrice +")").text() * parseInt( $(".count-inpt:eq("+ indexPrice +")").val() )  );
+			pricevaltext = parseInt( $(".cash-good-middle-col .priceval:eq("+ indexPrice +")").text() ) ;
+
+			inputPriceVal = parseInt( $(".count-inpt:eq("+ indexPrice +")").val() );
+
+				if ( $(".count-inpt:eq("+ indexPrice +")").val() == "" ) {
+
+					inputPriceVal = 0;
+
+				} else {
+
+					inputPriceVal = parseInt( $(".count-inpt:eq("+ indexPrice +")").val());
+
+				}
+
+			priceVal += pricevaltext * inputPriceVal;
 
 		}
 
@@ -45,7 +73,7 @@ $(document).ready(function() {
 
 			getTotalPrice();
 
-		}, 600);
+		}, 200);
 
 
 	});
