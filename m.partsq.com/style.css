@@ -963,7 +963,7 @@ select::-ms-expand {
 
 .category-header .right-col {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 26%;
 }
 
@@ -976,7 +976,7 @@ select::-ms-expand {
 
 .category-header .categoryhead-box {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 48%;
     text-align: center;
 }
@@ -990,7 +990,7 @@ select::-ms-expand {
 
 .category-header .left-col {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 26%;
     text-align: right;
 }
