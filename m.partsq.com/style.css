@@ -59,8 +59,20 @@
     content: "\e260";
 }
 
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
 .glyphicon-chevron-right:before {
   content: "\e080";
+}
+
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+.glyphicon-th-list:before {
+  content: "\e012";
 }
 
 .glyphicon-menu-left:before {
