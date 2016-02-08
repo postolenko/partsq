@@ -997,9 +997,6 @@ select::-ms-expand {
 
 .list-btn {
     cursor: pointer;
-    color: #ffffff;
-    font-size: 25px;
-    line-height: 30px;
     margin: 0 7%;
     
     -webkit-transition-property: background-color color;
@@ -1025,9 +1022,6 @@ select::-ms-expand {
 
 .cart-btn {
     cursor: pointer;
-    color: #ffffff;
-    font-size: 25px;
-    line-height: 30px;
     margin: 0 0 0 7%;
     
     -webkit-transition-property: background-color color;
@@ -1049,20 +1043,6 @@ select::-ms-expand {
     transition-property: background-color color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-}
-
-.cart-btn:link,
-.cart-btn:visited,
-.list-btn:link,
-.list-btn:visited {
-    color: #ffffff;
-}
-
-.cart-btn:hover,
-.cart-btn:active,
-.list-btn:hover,
-.list-btn:active {
-    color: #ffed00; 
 }
 
 /*-- Goods Cart --*/
